@@ -231,6 +231,8 @@ const Topbar = ({ toggleSidebar }) => {
     );
 };
 
+import IntegrationOnboarding from '../components/IntegrationOnboarding';
+
 const DashboardLayout = ({ children }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -244,6 +246,7 @@ const DashboardLayout = ({ children }) => {
                     {children}
                 </main>
                 <ChatBot />
+                <IntegrationOnboarding />
             </div>
         </div>
     );

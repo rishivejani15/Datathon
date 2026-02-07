@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useAuth } from '../contexts/AuthContext';
 import { motion } from 'framer-motion';
 import { containerVariants, itemVariants } from '../lib/animations';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
@@ -15,7 +16,10 @@ import {
     Users,
     AlertCircle,
     ArrowRight,
-    Play
+    Play,
+    Loader2,
+    CheckCircle2,
+    Github
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 
@@ -97,6 +101,91 @@ const Analytics = () => {
                         {t}
                     </button>
                 ))}
+            </motion.div>
+
+            {/* Live Repository Insights */}
+            <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <Card className="md:col-span-1 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border-indigo-500/20">
+                    <CardHeader className="pb-2">
+                        <div className="flex items-center justify-between">
+                            <CardTitle className="text-sm font-bold flex items-center gap-2">
+                                <Github className="h-4 w-4" />
+                                Live Repo Stats
+                            </CardTitle>
+                            {fetchingCommits ? (
+                                <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+                            ) : (
+                                <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                            )}
+                        </div>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="space-y-4">
+                            <div className="flex flex-col">
+                                <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Repository</span>
+                                <div className="flex items-center gap-2 mt-1">
+                                    <span className="text-lg font-bold">{userData?.githubId || "..."}</span>
+                                    <span className="text-muted-foreground">/</span>
+                                    <input
+                                        value={repoName}
+                                        onChange={(e) => setRepoName(e.target.value)}
+                                        className="bg-transparent border-b border-border/50 focus:border-primary outline-none font-bold text-lg w-32"
+                                    />
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-2 gap-4 pt-2">
+                                <div className="p-3 rounded-xl bg-background/50 border border-border/50">
+                                    <p className="text-[10px] text-muted-foreground uppercase font-bold">Total Commits</p>
+                                    <p className="text-2xl font-black mt-1">{commitData?.count || "0"}</p>
+                                </div>
+                                <div className="p-3 rounded-xl bg-background/50 border border-border/50">
+                                    <p className="text-[10px] text-muted-foreground uppercase font-bold">Active Authors</p>
+                                    <p className="text-2xl font-black mt-1">
+                                        {commitData?.commits ? new Set(commitData.commits.map(c => c.commit?.author?.name)).size : "0"}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                <Card className="md:col-span-2">
+                    <CardHeader className="pb-2">
+                        <CardTitle className="text-sm font-bold">Recent Live Commits</CardTitle>
+                        <CardDescription>Real-time stream from {repoName}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="h-[120px] overflow-y-auto space-y-2 pr-2 scrollbar-thin">
+                            {fetchingCommits ? (
+                                <div className="h-full flex items-center justify-center text-muted-foreground text-xs italic">
+                                    Fetching live data...
+                                </div>
+                            ) : commitData?.commits?.length > 0 ? (
+                                commitData.commits.slice(0, 5).map((commit, i) => (
+                                    <div key={i} className="flex items-center justify-between p-2 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 transition-colors">
+                                        <div className="flex items-center gap-3 overflow-hidden">
+                                            <div className="h-7 w-7 rounded-full bg-primary/10 flex items-center justify-center text-[10px] font-bold text-primary shrink-0">
+                                                {commit.commit?.author?.name?.charAt(0) || "G"}
+                                            </div>
+                                            <div className="flex flex-col truncate">
+                                                <span className="text-xs font-bold truncate">{commit.commit?.message}</span>
+                                                <span className="text-[10px] text-muted-foreground">{commit.commit?.author?.name} • {new Date(commit.commit?.author?.date).toLocaleDateString()}</span>
+                                            </div>
+                                        </div>
+                                        <div className="text-[10px] font-mono text-muted-foreground bg-background px-2 py-0.5 rounded border border-border">
+                                            {commit.sha?.substring(0, 7)}
+                                        </div>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className="h-full flex flex-col items-center justify-center text-muted-foreground text-xs text-center p-4">
+                                    <AlertCircle className="h-4 w-4 mb-2 opacity-20" />
+                                    No live commits found for this organization.
+                                </div>
+                            )}
+                        </div>
+                    </CardContent>
+                </Card>
             </motion.div>
 
             <motion.div variants={itemVariants} className="grid gap-6 md:grid-cols-2">
