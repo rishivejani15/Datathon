@@ -1,0 +1,112 @@
+[
+    {
+        "issue_id": "JIRA-001",
+        "sprint_id": "SPR-01",
+        "title": "Initial user setup",
+        "issue_type": "Story",
+        "story_points": 8,
+        "assignee": "dev_a",
+        "module_id": "auth",
+        "created_at": "2026-01-14T09:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-002",
+        "sprint_id": "SPR-01",
+        "title": "Basic search UI",
+        "issue_type": "Story",
+        "story_points": 5,
+        "assignee": "dev_b",
+        "module_id": "search",
+        "created_at": "2026-01-14T10:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-003",
+        "sprint_id": "SPR-01",
+        "title": "Payment gateway integration spike",
+        "issue_type": "Task",
+        "story_points": 5,
+        "assignee": "dev_c",
+        "module_id": "payments",
+        "created_at": "2026-01-15T09:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-004",
+        "sprint_id": "SPR-01",
+        "title": "User profile page",
+        "issue_type": "Story",
+        "story_points": 8,
+        "assignee": "dev_d",
+        "module_id": "auth",
+        "created_at": "2026-01-16T11:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-005",
+        "sprint_id": "SPR-01",
+        "title": "Search indexing optimization",
+        "issue_type": "Task",
+        "story_points": 14,
+        "assignee": "dev_e",
+        "module_id": "search",
+        "created_at": "2026-01-18T14:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-101",
+        "sprint_id": "SPR-02",
+        "title": "Refund service validation",
+        "issue_type": "Story",
+        "story_points": 5,
+        "assignee": "dev_b",
+        "module_id": "payments",
+        "created_at": "2026-02-01T09:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-102",
+        "sprint_id": "SPR-02",
+        "title": "Bulk refund API",
+        "issue_type": "Story",
+        "story_points": 8,
+        "assignee": "dev_c",
+        "module_id": "payments",
+        "created_at": "2026-02-01T09:15:00Z"
+    },
+    {
+        "issue_id": "JIRA-103",
+        "sprint_id": "SPR-02",
+        "title": "Refactor payment legacy code",
+        "issue_type": "Task",
+        "story_points": 13,
+        "assignee": "dev_a",
+        "module_id": "payments",
+        "created_at": "2026-02-01T10:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-104",
+        "sprint_id": "SPR-02",
+        "title": "Login with Google",
+        "issue_type": "Story",
+        "story_points": 5,
+        "assignee": "dev_d",
+        "module_id": "auth",
+        "created_at": "2026-02-02T11:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-105",
+        "sprint_id": "SPR-02",
+        "title": "Search filters UI",
+        "issue_type": "Story",
+        "story_points": 8,
+        "assignee": "dev_e",
+        "module_id": "search",
+        "created_at": "2026-02-03T09:00:00Z"
+    },
+    {
+        "issue_id": "JIRA-106",
+        "sprint_id": "SPR-02",
+        "title": "Fix search pagination bug",
+        "issue_type": "Bug",
+        "story_points": 3,
+        "assignee": "dev_e",
+        "module_id": "search",
+        "created_at": "2026-02-05T14:00:00Z"
+    }
+]

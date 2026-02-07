@@ -1,0 +1,18 @@
+[
+    {
+        "sprint_id": "SPR-01",
+        "name": "Sprint 01",
+        "start_date": "2026-01-15T00:00:00Z",
+        "end_date": "2026-01-29T23:59:59Z",
+        "team_id": "team_alpha",
+        "planned_story_points": 40
+    },
+    {
+        "sprint_id": "SPR-02",
+        "name": "Sprint 02",
+        "start_date": "2026-02-01T00:00:00Z",
+        "end_date": "2026-02-14T23:59:59Z",
+        "team_id": "team_alpha",
+        "planned_story_points": 45
+    }
+]

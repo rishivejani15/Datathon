@@ -1,0 +1,26 @@
+[
+  {
+    "pr_id": "PR-101",
+    "reviewer": "dev_a",
+    "state": "APPROVED",
+    "timestamp": "2026-02-02T13:50:00Z"
+  },
+  {
+    "pr_id": "PR-102",
+    "reviewer": "dev_a",
+    "state": "APPROVED",
+    "timestamp": "2026-02-03T17:45:00Z"
+  },
+  {
+    "pr_id": "PR-103",
+    "reviewer": "dev_b",
+    "state": "COMMENTED",
+    "timestamp": "2026-02-04T15:10:00Z"
+  },
+  {
+    "pr_id": "PR-104",
+    "reviewer": "dev_c",
+    "state": "APPROVED",
+    "timestamp": "2026-02-05T11:50:00Z"
+  }
+]

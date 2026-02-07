@@ -1,0 +1,42 @@
+[
+  {
+    "commit_id": "C-201",
+    "author": "dev_a",
+    "timestamp": "2026-02-01T09:10:00Z",
+    "files_changed": [
+      "services/payments/transaction_service.py"
+    ]
+  },
+  {
+    "commit_id": "C-202",
+    "author": "dev_a",
+    "timestamp": "2026-02-02T10:25:00Z",
+    "files_changed": [
+      "services/payments/refund_service.py"
+    ]
+  },
+  {
+    "commit_id": "C-203",
+    "author": "dev_b",
+    "timestamp": "2026-02-02T11:40:00Z",
+    "files_changed": [
+      "services/payments/validator.py"
+    ]
+  },
+  {
+    "commit_id": "C-204",
+    "author": "dev_d",
+    "timestamp": "2026-02-03T09:00:00Z",
+    "files_changed": [
+      "services/auth/login_service.py"
+    ]
+  },
+  {
+    "commit_id": "C-205",
+    "author": "dev_e",
+    "timestamp": "2026-02-04T14:30:00Z",
+    "files_changed": [
+      "services/search/query_engine.py"
+    ]
+  }
+]

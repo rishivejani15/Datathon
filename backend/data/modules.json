@@ -1,0 +1,5 @@
+{
+  "payments": ["services/payments/"],
+  "auth": ["services/auth/"],
+  "search": ["services/search/"]
+}

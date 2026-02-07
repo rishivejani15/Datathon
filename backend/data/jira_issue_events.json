@@ -1,0 +1,116 @@
+[
+    {
+        "issue_id": "JIRA-001",
+        "timestamp": "2026-01-15T10:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-001",
+        "timestamp": "2026-01-20T14:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-002",
+        "timestamp": "2026-01-16T09:30:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-002",
+        "timestamp": "2026-01-18T11:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-003",
+        "timestamp": "2026-01-15T13:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-003",
+        "timestamp": "2026-01-19T16:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-004",
+        "timestamp": "2026-01-17T09:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-004",
+        "timestamp": "2026-01-25T15:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-005",
+        "timestamp": "2026-01-19T10:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-005",
+        "timestamp": "2026-01-28T17:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-101",
+        "timestamp": "2026-02-01T10:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-101",
+        "timestamp": "2026-02-03T18:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-102",
+        "timestamp": "2026-02-01T11:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-103",
+        "timestamp": "2026-02-02T09:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-104",
+        "timestamp": "2026-02-03T10:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-104",
+        "timestamp": "2026-02-05T16:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-105",
+        "timestamp": "2026-02-04T09:30:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    },
+    {
+        "issue_id": "JIRA-105",
+        "timestamp": "2026-02-06T14:00:00Z",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE"
+    },
+    {
+        "issue_id": "JIRA-106",
+        "timestamp": "2026-02-06T15:00:00Z",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS"
+    }
+]

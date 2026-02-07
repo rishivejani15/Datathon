@@ -1,0 +1,39 @@
+[
+  {
+    "pr_id": "PR-101",
+    "author": "dev_b",
+    "created_at": "2026-02-01T10:15:00Z",
+    "merged_at": "2026-02-02T14:20:00Z",
+    "files_changed": [
+      "services/payments/transaction_service.py",
+      "services/payments/validator.py"
+    ]
+  },
+  {
+    "pr_id": "PR-102",
+    "author": "dev_c",
+    "created_at": "2026-02-03T09:30:00Z",
+    "merged_at": "2026-02-03T18:10:00Z",
+    "files_changed": [
+      "services/payments/refund_service.py"
+    ]
+  },
+  {
+    "pr_id": "PR-103",
+    "author": "dev_d",
+    "created_at": "2026-02-04T11:00:00Z",
+    "merged_at": "2026-02-05T16:45:00Z",
+    "files_changed": [
+      "services/auth/login_service.py"
+    ]
+  },
+  {
+    "pr_id": "PR-104",
+    "author": "dev_e",
+    "created_at": "2026-02-05T08:40:00Z",
+    "merged_at": "2026-02-05T12:30:00Z",
+    "files_changed": [
+      "services/search/query_engine.py"
+    ]
+  }
+]
