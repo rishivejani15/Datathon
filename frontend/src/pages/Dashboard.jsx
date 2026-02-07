@@ -20,6 +20,8 @@ import {
     Zap
 } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { useAuth } from '../contexts/AuthContext';
+import JiraMetrics from '../components/JiraMetrics';
 
 const data = [
     { name: 'Jan', delivery: 85, cost: 78 },
@@ -85,6 +87,8 @@ const RiskHeatmap = () => {
 };
 
 const Dashboard = () => {
+    const { jiraData } = useAuth();
+
     return (
         <motion.div
             variants={containerVariants}
@@ -329,6 +333,19 @@ const Dashboard = () => {
                     </CardContent>
                 </Card>
             </motion.div>
+
+            {/* Jira Health Section */}
+            {jiraData && jiraData.length > 0 && (
+                <motion.div variants={itemVariants} className="space-y-4">
+                    <h3 className="text-xl font-bold flex items-center gap-2">
+                        <Briefcase className="h-5 w-5 text-[#0052CC]" />
+                        Jira Health
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <JiraMetrics jiraData={jiraData} />
+                    </div>
+                </motion.div>
+            )}
         </motion.div>
     );
 };

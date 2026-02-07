@@ -37,13 +37,23 @@ const INTEGRATIONS = [
 const IntegrationOnboarding = () => {
     const { currentUser, userData, setOnboardingComplete } = useAuth();
     const [selected, setSelected] = useState([]);
-    const [step, setStep] = useState('select'); // 'select' | 'github-alert'
+    const [step, setStep] = useState('select'); // 'select' | 'jira-auth' | 'github-alert'
     const [countdown, setCountdown] = useState(5);
     const [isExecuting, setIsExecuting] = useState(false);
     const [isFinishing, setIsFinishing] = useState(false);
 
+    // Jira Form State
+    const [jiraCreds, setJiraCreds] = useState({
+        url: 'https://',
+        email: '',
+        token: ''
+    });
+    const [jiraLoading, setJiraLoading] = useState(false);
+    const [jiraError, setJiraError] = useState(null);
+    const [jiraSuccess, setJiraSuccess] = useState(false);
+
     // Force the modal to stay open once the final alert or finishing process starts
-    const forceOpen = step === 'github-alert' || isFinishing;
+    const forceOpen = step === 'github-alert' || step === 'jira-auth' || isFinishing;
     const showModal = currentUser && userData && (!userData.onboardingCompleted || forceOpen);
 
     const toggleIntegration = (id) => {
@@ -52,13 +62,64 @@ const IntegrationOnboarding = () => {
         );
     };
 
-    const handleNext = async () => {
+    const handleNext = () => {
         if (selected.length === 0) return;
 
-        if (selected.includes('github')) {
-            setStep('github-alert');
-        } else {
-            finalizeOnboarding();
+        if (step === 'select') {
+            if (selected.includes('jira')) {
+                setStep('jira-auth');
+            } else if (selected.includes('github')) {
+                setStep('github-alert');
+            } else {
+                finalizeOnboarding();
+            }
+        } else if (step === 'jira-auth') {
+            if (selected.includes('github')) {
+                setStep('github-alert');
+            } else {
+                finalizeOnboarding();
+            }
+        }
+    };
+
+    const handleJiraAuth = async (e) => {
+        e.preventDefault();
+        setJiraLoading(true);
+        setJiraError(null);
+
+        try {
+            const response = await fetch('https://rudraaaa76-jira-api.hf.space/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    jira_server_url: jiraCreds.url,
+                    jira_email: jiraCreds.email,
+                    jira_api_token: jiraCreds.token
+                })
+            });
+
+            if (!response.ok) throw new Error('Jira authentication failed. Please check your credentials.');
+
+            const data = await response.json();
+            console.log("Jira Auth Successful:", data);
+
+            // Store token for future use
+            if (data.access_token) {
+                localStorage.setItem('jira_access_token', data.access_token);
+                setJiraSuccess(true);
+                // Auto-advance after a brief success message
+                setTimeout(() => {
+                    handleNext();
+                }, 1500);
+            }
+        } catch (err) {
+            console.error("Jira Auth Error:", err);
+            setJiraError(err.message);
+        } finally {
+            setJiraLoading(false);
         }
     };
 
@@ -68,16 +129,22 @@ const IntegrationOnboarding = () => {
         try {
             await setOnboardingComplete();
 
-            // Navigate to selected URLs
-            const targets = selected.map(id => INTEGRATIONS.find(i => i.id === id)).filter(Boolean);
+            // Navigate to selected URLs (excluding Jira since we handled it in-app if selected)
+            const remainingTargets = selected
+                .filter(id => id !== 'jira')
+                .map(id => INTEGRATIONS.find(i => i.id === id))
+                .filter(Boolean);
 
-            if (targets.length > 0) {
-                // Open all but the first in new tabs (optional, may be blocked)
-                for (let i = 1; i < targets.length; i++) {
-                    window.open(targets[i].url, '_blank');
+            if (remainingTargets.length > 0) {
+                // Open all but the first in new tabs
+                for (let i = 1; i < remainingTargets.length; i++) {
+                    window.open(remainingTargets[i].url, '_blank');
                 }
-                // Redirect current tab to the first one
-                window.location.assign(targets[0].url);
+                // Redirect current tab to the first one (usually GitHub)
+                window.location.assign(remainingTargets[0].url);
+            } else {
+                // If only Jira was selected or no other redirects needed, go home/dashboard
+                window.location.assign('/');
             }
         } catch (error) {
             console.error("Onboarding finalization failed:", error);
@@ -174,6 +241,98 @@ const IntegrationOnboarding = () => {
                                         </p>
                                     </div>
                                 </>
+                            ) : step === 'jira-auth' ? (
+                                <div className="space-y-6">
+                                    <div className="flex items-center gap-4">
+                                        <div className="p-3 bg-[#0052CC]/10 border border-[#0052CC]/20 rounded-xl">
+                                            <Briefcase className="h-6 w-6 text-[#0052CC]" />
+                                        </div>
+                                        <div>
+                                            <h2 className="text-2xl font-bold">Jira Configuration</h2>
+                                            <p className="text-sm text-muted-foreground">Authorize EntelliGen to analyze your Jira workspace.</p>
+                                        </div>
+                                    </div>
+
+                                    <form onSubmit={handleJiraAuth} className="grid grid-cols-1 gap-4">
+                                        <div className="space-y-2">
+                                            <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Jira Server URL</label>
+                                            <input
+                                                type="url"
+                                                required
+                                                placeholder="https://your-domain.atlassian.net"
+                                                value={jiraCreds.url}
+                                                onChange={(e) => setJiraCreds({ ...jiraCreds, url: e.target.value })}
+                                                className="w-full h-11 bg-muted/50 border border-border rounded-xl px-4 outline-none focus:border-primary transition-colors"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Jira Email</label>
+                                            <input
+                                                type="email"
+                                                required
+                                                placeholder="name@company.com"
+                                                value={jiraCreds.email}
+                                                onChange={(e) => setJiraCreds({ ...jiraCreds, email: e.target.value })}
+                                                className="w-full h-11 bg-muted/50 border border-border rounded-xl px-4 outline-none focus:border-primary transition-colors"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Jira API Token</label>
+                                            <input
+                                                type="password"
+                                                required
+                                                placeholder="Paste your API token here"
+                                                value={jiraCreds.token}
+                                                onChange={(e) => setJiraCreds({ ...jiraCreds, token: e.target.value })}
+                                                className="w-full h-11 bg-muted/50 border border-border rounded-xl px-4 outline-none focus:border-primary transition-colors"
+                                            />
+                                        </div>
+
+                                        {jiraError && (
+                                            <div className="p-3 bg-destructive/10 border border-destructive/20 text-destructive text-xs rounded-lg flex items-center gap-2">
+                                                <AlertCircle className="h-4 w-4" /> {jiraError}
+                                            </div>
+                                        )}
+
+                                        {jiraSuccess && (
+                                            <div className="p-3 bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-xs rounded-lg flex items-center gap-2">
+                                                <CheckCircle2 className="h-4 w-4" /> Jira authenticated successfully!
+                                            </div>
+                                        )}
+
+                                        <div className="pt-4 flex items-center justify-between">
+                                            <div className="space-y-1">
+                                                <p className="text-[10px] font-bold text-muted-foreground uppercase">Need a token?</p>
+                                                <a
+                                                    href="https://id.atlassian.com/manage-profile/security/api-tokens"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-[10px] text-primary hover:underline font-bold"
+                                                >
+                                                    Generate it here →
+                                                </a>
+                                            </div>
+                                            <button
+                                                type="submit"
+                                                disabled={jiraLoading || jiraSuccess}
+                                                className="h-11 px-8 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 transition-all flex items-center gap-2 disabled:opacity-50"
+                                            >
+                                                {jiraLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Verify & Continue"}
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                    <div className="p-4 bg-primary/5 border border-primary/10 rounded-2xl text-[11px] text-muted-foreground space-y-2">
+                                        <p className="font-bold flex items-center gap-2 text-primary">
+                                            <Info className="h-3.5 w-3.5" /> How to connect:
+                                        </p>
+                                        <ol className="list-decimal list-inside space-y-1">
+                                            <li>Log in to your Atlassian account.</li>
+                                            <li>Navigate to <b>Security</b> and click <b>Create API Token</b>.</li>
+                                            <li>Copy the token and paste it above along with your domain.</li>
+                                        </ol>
+                                    </div>
+                                </div>
                             ) : (
                                 <div className="flex flex-col items-center text-center space-y-8 py-4">
                                     <div className="relative">

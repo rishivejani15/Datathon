@@ -58,10 +58,56 @@ const teamLoadData = [
 ];
 
 const Analytics = () => {
-    // State for Simulator
+    // Auth
+    const { currentUser, userData: authUserData } = useAuth();
+
+    // Live repo states
+    const [fetchingCommits, setFetchingCommits] = useState(false);
+    const [commitData, setCommitData] = useState(null);
+    const [repoName, setRepoName] = useState("Quasar");
+    const [error, setError] = useState(null);
+
     const [engineersToAdd, setEngineersToAdd] = useState(0);
     const [simulatedVelocity, setSimulatedVelocity] = useState(45); // Base velocity
     const [projectedCompletion, setProjectedCompletion] = useState(14); // Days
+
+    useEffect(() => {
+        const fetchCommits = async () => {
+            const org = authUserData?.githubId || "rishivejani"; // Updated fallback
+            if (!org || !repoName) return;
+
+            console.log(`Fetching stats for ${org}/${repoName}...`);
+            setFetchingCommits(true);
+            setError(null);
+            try {
+                const response = await fetch('https://samyak000-github-app.hf.space/insights/commits', {
+                    method: 'POST',
+                    headers: {
+                        'accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        org: org,
+                        repo: repoName
+                    })
+                });
+
+                if (!response.ok) throw new Error('Failed to fetch commit insights');
+
+                const data = await response.json();
+                console.log("GitHub API Data Received:", data);
+                setCommitData(data);
+            } catch (err) {
+                console.error("Fetch error:", err);
+                setError(err.message);
+            } finally {
+                setFetchingCommits(false);
+            }
+        };
+
+        const timeoutId = setTimeout(fetchCommits, 500); // Debounce if typing repo name
+        return () => clearTimeout(timeoutId);
+    }, [authUserData?.githubId, repoName]);
 
     const handleSimulationChange = (value) => {
         const added = value[0];
@@ -83,6 +129,13 @@ const Analytics = () => {
                 <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Advanced Analytics</h2>
                 <p className="text-muted-foreground">Deep dive simulation and predictive modeling for engineering operations.</p>
             </motion.div>
+
+            {error && (
+                <div className="p-4 rounded-xl bg-destructive/10 border border-destructive/20 text-destructive flex items-center gap-3">
+                    <AlertCircle className="h-5 w-5" />
+                    <p className="text-sm font-medium">Error loading analytics: {error}. Check your API keys and internet connection.</p>
+                </div>
+            )}
 
             {/* Interactive Filters Bar */}
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 p-4 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm">
@@ -124,7 +177,7 @@ const Analytics = () => {
                             <div className="flex flex-col">
                                 <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Repository</span>
                                 <div className="flex items-center gap-2 mt-1">
-                                    <span className="text-lg font-bold">{userData?.githubId || "..."}</span>
+                                    <span className="text-lg font-bold">{authUserData?.githubId || "rishivejani15"}</span>
                                     <span className="text-muted-foreground">/</span>
                                     <input
                                         value={repoName}

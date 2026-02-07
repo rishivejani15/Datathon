@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, Send, X, Bot, User, Sparkles } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { useAuth } from '../contexts/AuthContext';
+import ReactMarkdown from 'react-markdown';
 
 const ChatBot = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,58 +14,56 @@ const ChatBot = () => {
     const [isTyping, setIsTyping] = useState(false);
     const scrollRef = useRef(null);
 
+    const { currentUser } = useAuth();
+
     useEffect(() => {
         if (scrollRef.current) {
             scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
         }
     }, [messages, isTyping]);
 
-    const handleSend = () => {
+    const handleSend = async () => {
         if (!input.trim()) return;
 
         const userMessage = { id: Date.now(), text: input, isBot: false };
-        setMessages(prev => [...prev, userMessage]);
+        const newMessages = [...messages, userMessage];
+        setMessages(newMessages);
         setInput("");
         setIsTyping(true);
 
-        // Simulate AI Response
-        setTimeout(() => {
-            const aiResponse = getAiResponse(input);
-            setMessages(prev => [...prev, { id: Date.now() + 1, text: aiResponse, isBot: true }]);
+        // Convert messages to history format for the LLM
+        const history = messages.slice(-5).map(m => ({
+            role: m.isBot ? "assistant" : "user",
+            content: m.text
+        }));
+
+        try {
+            const response = await fetch('http://localhost:8000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: input,
+                    firebase_id: currentUser?.uid || "anonymous",
+                    history: history
+                }),
+            });
+
+            if (!response.ok) throw new Error('Backend unreachable');
+
+            const data = await response.json();
+            setMessages(prev => [...prev, { id: Date.now() + 1, text: data.response, isBot: true }]);
+        } catch (err) {
+            console.error("Chat Error:", err);
+            setMessages(prev => [...prev, {
+                id: Date.now() + 1,
+                text: "### ⚠️ Connectivity Issue\nI'm having trouble connecting to my backend service. Please ensure the Python server is running.",
+                isBot: true
+            }]);
+        } finally {
             setIsTyping(false);
-        }, 1500);
-    };
-
-    const getAiResponse = (query) => {
-        const q = query.toLowerCase();
-
-        // Knowledge Base Expansion
-        if (q.includes("delivery") || q.includes("health")) {
-            return "Based on Sprint 24 data, delivery health is currently at 98.2%. The main factor is the stabilization of the backend team velocity and a 12% reduction in scope creep.";
         }
-        if (q.includes("risk") || q.includes("bottleneck")) {
-            return "I've detected a high delivery risk in the backend area due to team overload in the Auth service. I recommend reallocating 2 senior engineers from the legacy cleanup initiative to assist.";
-        }
-        if (q.includes("cost") || q.includes("budget") || q.includes("finance") || q.includes("burn")) {
-            return "Current budget utilization is at 92%. We detected a slight overage in Sprint 22 due to cloud infrastructure scaling for the Mobile App load tests, but our predictive burn forecast shows we will finish Q3 under budget by 2%.";
-        }
-        if (q.includes("workforce") || q.includes("productivity") || q.includes("morale")) {
-            return "Engineering productivity is trending upwards, currently at 124.5. Code review turnaround times have improved by 18%, and team engagement scores are high (4.8/5) following the recent tech stack upgrade.";
-        }
-        if (q.includes("dora") || q.includes("cycle") || q.includes("lead time")) {
-            return "Our DORA metrics are strong: Cycle time is down to 3.2 days, and Deployment Frequency has increased to 4.2 deploys/day. Change Failure Rate remains stable at 1.5%.";
-        }
-        if (q.includes("tech debt") || q.includes("legacy") || q.includes("refactor")) {
-            return "Technical debt is currently estimated at 14% of the codebase. The 'Auth Rewrite' initiative is successfully reducing this in the core engine, though the 'Legacy Cleanup' in the reporting module has been deprioritized due to low ROI.";
-        }
-        if (q.includes("velocity") || q.includes("sprint")) {
-            return "Sprint velocity has averaged 142 story points over the last 3 sprints. We see a slight dip in the Frontend squad due to the Login page redesign, but it's expected to bounce back next cycle.";
-        }
-        if (q.includes("hello") || q.includes("hi") || q.includes("help")) {
-            return "Hello! I can help you analyze delivery health, engineering risks, tech debt, DORA metrics, costs, and workforce productivity. Try asking 'What's our current delivery risk?' or 'Show me budget insights'.";
-        }
-
-        return "I'm not quite sure about that specific query. However, I can provide detailed insights on: \n1. Delivery Health & Risks\n2. DORA Metrics (Lead Time, Cycle Time)\n3. Technical Debt status\n4. Financial & Budget burn forecasts\n5. Workforce Productivity levels.\n\nWhich of these would you like to explore?";
     };
 
     return (
@@ -136,10 +136,18 @@ const ChatBot = () => {
                                     <div className={cn(
                                         "p-3.5 rounded-2xl text-[13px] leading-relaxed shadow-[0_2px_8px_rgba(0,0,0,0.04)]",
                                         msg.isBot
-                                            ? "bg-card text-foreground rounded-tl-none border border-border"
+                                            ? "bg-card text-foreground rounded-tl-none border border-border prose prose-sm max-w-none dark:prose-invert"
                                             : "bg-primary text-primary-foreground rounded-tr-none shadow-primary/20"
                                     )}>
-                                        {msg.text}
+                                        {msg.isBot ? (
+                                            <div className="markdown-content prose prose-sm max-w-none dark:prose-invert">
+                                                <ReactMarkdown>
+                                                    {msg.text}
+                                                </ReactMarkdown>
+                                            </div>
+                                        ) : (
+                                            msg.text
+                                        )}
                                     </div>
                                 </div>
                             ))}
