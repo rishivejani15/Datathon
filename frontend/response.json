@@ -1,0 +1,3592 @@
+{
+    "boards": [
+        {
+            "id": 11,
+            "name": "DYNSAE board",
+            "type": "kanban",
+            "configuration": {
+                "name": "DYNSAE board",
+                "ranking": {
+                    "rankCustomFieldId": 10019
+                },
+                "board_id": 11,
+                "self_link": "https://rudraparmar1309-1770450259652.atlassian.net/rest/agile/1.0/board/11/configuration",
+                "estimation": null,
+                "column_config": {
+                    "columns": [
+                        {
+                            "name": "Backlog",
+                            "statuses": []
+                        },
+                        {
+                            "name": "Backlog",
+                            "statuses": [
+                                {
+                                    "id": "10025",
+                                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/status/10025"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Selected for Development",
+                            "statuses": [
+                                {
+                                    "id": "10026",
+                                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/status/10026"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "In Progress",
+                            "statuses": [
+                                {
+                                    "id": "3",
+                                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/status/3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Done",
+                            "statuses": [
+                                {
+                                    "id": "10027",
+                                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/status/10027"
+                                }
+                            ]
+                        }
+                    ],
+                    "constraintType": "issueCount"
+                }
+            }
+        },
+        {
+            "id": 12,
+            "name": "EMPTES board",
+            "type": "scrum",
+            "sprints": [
+                {
+                    "goal": null,
+                    "state": "future",
+                    "end_date": null,
+                    "sprint_id": 14,
+                    "start_date": null,
+                    "sprint_name": "EMPTES Sprint 1",
+                    "complete_date": null
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "FASCUS board",
+            "type": "scrum",
+            "sprints": [
+                {
+                    "goal": "",
+                    "state": "closed",
+                    "end_date": "2026-02-21T13:26:08Z",
+                    "sprint_id": 15,
+                    "start_date": "2026-02-07T13:26:37.878000Z",
+                    "sprint_name": "FASCUS Sprint 1",
+                    "complete_date": "2026-02-07T13:34:03.985000Z"
+                },
+                {
+                    "goal": null,
+                    "state": "future",
+                    "end_date": "2026-03-07T13:26:08Z",
+                    "sprint_id": 20,
+                    "start_date": "2026-02-21T13:26:37.878000Z",
+                    "sprint_name": "FASCUS Sprint 2",
+                    "complete_date": null
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "CRITES board",
+            "type": "scrum",
+            "sprints": [
+                {
+                    "goal": null,
+                    "state": "future",
+                    "end_date": null,
+                    "sprint_id": 16,
+                    "start_date": null,
+                    "sprint_name": "CRITES Sprint 1",
+                    "complete_date": null
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "HISOPA board",
+            "type": "scrum",
+            "sprints": [
+                {
+                    "goal": null,
+                    "state": "future",
+                    "end_date": null,
+                    "sprint_id": 17,
+                    "start_date": null,
+                    "sprint_name": "HISOPA Sprint 1",
+                    "complete_date": null
+                }
+            ]
+        }
+    ],
+    "synced_at": "2026-02-07T21:02:39.532795",
+    "projects_data": [
+        {
+            "issues": [
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:25:50.764000+05:30",
+                    "summary": "Audio processing is unmaintainable on nested sections",
+                    "updated": "2026-02-07T17:25:50.828000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-18",
+                    "components": [
+                        "Logical Visualization Allocation",
+                        "Unplugged Content Management Structure",
+                        "Well-Organized Navigation Thread"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "There seems to be an error concerning a error boundary that uses inconsistent naming conventions in demo modes. Validate third-party integrations to verify their responses align with expectations. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:25:48.211000+05:30",
+                    "summary": "Barcode scanner leads to data corruption for regular user roles",
+                    "updated": "2026-02-07T17:25:49.754000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-17",
+                    "components": [
+                        "Feature-Rich Workflow Sequence Interpretation",
+                        "Remodeled Evaluation Activity"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "The following issue was detected with a svelte widget that causes memory leaks with high latency. Set up additional logging and monitoring for better observability during runtime. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:25:45.844000+05:30",
+                    "summary": "Authorization does not handle edge cases on variant configurations",
+                    "updated": "2026-02-07T17:33:33.285000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:25:47.441000+05:30",
+                    "issue_key": "CRITES-16",
+                    "components": [
+                        "Evolving Expression Protocol",
+                        "Remodeled Evaluation Activity",
+                        "Unplugged Content Management Structure"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 435840,
+                    "description": "Our diagnostics reveal a problem with a API endpoint that is misaligned with original specifications in history tracking. Talk with stakeholders to prioritize this issue and determine its business impact. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:25:44.139000+05:30",
+                    "summary": "Sorting feature has low test coverage on restricted features",
+                    "updated": "2026-02-07T17:25:44.273000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-15",
+                    "components": [
+                        "Remodeled Evaluation Activity",
+                        "Unplugged Content Management Structure"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This matter involves a smoke test that has hardcoded labels with expired tokens. Engage in a code walkthrough with peers to uncover hidden vulnerabilities. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:25:41.545000+05:30",
+                    "summary": "Git hook causes unnecessary API calls with toggled settings",
+                    "updated": "2026-02-07T17:33:20.772000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:25:43.454000+05:30",
+                    "issue_key": "CRITES-14",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": 124020,
+                    "description": "Attention is needed for a distance calculator that fails with certain inputs in demo modes. Verify all configurations and environment variables to rule out misconfigurations. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "feature",
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:25:38.799000+05:30",
+                    "summary": "Data aggregation fails to initialize properly on PDF generation",
+                    "updated": "2026-02-07T17:25:40.518000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-13",
+                    "components": [
+                        "Evolving Expression Protocol",
+                        "Structured Grouping Structure",
+                        "Unplugged Content Management Structure"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "A noticeable issue has occurred with a load test that is vulnerable to injection attacks with sticky headers. Engage in a code walkthrough with peers to uncover hidden vulnerabilities. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "feature",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:25:36.330000+05:30",
+                    "summary": "Query optimization causes issues with session tokens at peak hours",
+                    "updated": "2026-02-07T17:25:36.423000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-12",
+                    "components": [
+                        "Remodeled Evaluation Activity",
+                        "Stable Filter Integration Adapter"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The report sheds light on a license management that has low test coverage for specific user roles. Analyze the issue thoroughly and identify the steps to reproduce it. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:25:34.577000+05:30",
+                    "summary": "Response payload has missing timeouts with long text values",
+                    "updated": "2026-02-07T17:25:34.651000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-11",
+                    "components": [
+                        "Stable Filter Integration Adapter",
+                        "Unplugged Content Management Structure",
+                        "Well-Organized Navigation Thread"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This problem is associated with a data transformation that has memory inefficiencies during file deletions. Document any findings during the debugging process to improve issue resolution time in the future. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "bug"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:16.606000+05:30",
+                    "summary": "File system API produces frequent merge conflicts on notification badges",
+                    "updated": "2026-02-07T17:23:16.697000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-10",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "Attention is needed for a disk analysis that lacks concurrency support on touch devices. Consider refactoring the code for better readability and maintainability. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "high-priority",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:14.780000+05:30",
+                    "summary": "Commit history has missing timeouts while clearing caches",
+                    "updated": "2026-02-07T17:23:14.971000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-9",
+                    "components": [
+                        "Remodeled Evaluation Activity",
+                        "Unplugged Content Management Structure"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Our team has identified a user permission that lacks onboarding workflow on variant configurations. Check related logs for specific error messages or patterns that could help isolate the problem. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "documentation",
+                        "investigation",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:13.011000+05:30",
+                    "summary": "Audit log contains excessive external dependencies under specific conditions",
+                    "updated": "2026-02-07T17:23:13.089000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-8",
+                    "components": [
+                        "Logical Visualization Allocation"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "Here we have a rollback feature that does not load properly in responsive views. Address the issue with a proof-of-concept (POC) for an alternative approach if needed. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "investigation",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:10.840000+05:30",
+                    "summary": "Email notification needs caching strategies in edge cases",
+                    "updated": "2026-02-07T17:23:11.016000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-7",
+                    "components": [
+                        "Logical Visualization Allocation"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "The report sheds light on a service scale that needs pagination updates in sandbox environments. Check related logs for specific error messages or patterns that could help isolate the problem. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:23:08.494000+05:30",
+                    "summary": "Account management needs simplified flow in the latest version",
+                    "updated": "2026-02-07T17:23:10.166000+05:30",
+                    "assignee": "John Doe",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:23:10.148000+05:30",
+                    "issue_key": "CRITES-6",
+                    "components": [
+                        "Logical Visualization Allocation",
+                        "Stable Filter Integration Adapter",
+                        "Unplugged Content Management Structure"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "Immediate action is required for a pull request that is visually inconsistent with inactive accounts. Ensure the functionality aligns with the original requirements and expected behaviors. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "documentation",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:23:05.424000+05:30",
+                    "summary": "Threat protection requires optimized scrolling with temporary files",
+                    "updated": "2026-02-07T17:23:07.370000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-5",
+                    "components": [
+                        "Well-Organized Navigation Thread"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This task is concerned with a bug backlog that does not handle edge cases in the help center. Prepare a patch for immediate resolution and follow it up with a long-term fix. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "critical",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:04.100000+05:30",
+                    "summary": "Data transformation leads to inaccurate aggregations on duplicate records",
+                    "updated": "2026-02-07T17:33:41.636000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-4",
+                    "components": [
+                        "Remodeled Evaluation Activity",
+                        "Structured Grouping Structure"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": 324540,
+                    "description": "An important concern is raised about a data validation that has no loading indicator in modal windows. Review recent code changes and ensure no regressions have been introduced. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:02.740000+05:30",
+                    "summary": "Chatbot contains misleading instructions in grid layouts",
+                    "updated": "2026-02-07T17:23:02.821000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-3",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A key problem has been identified with a disk analysis that does not sync properly with visual hints. Double-check for any outdated dependencies and update them if necessary. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:23:00.065000+05:30",
+                    "summary": "Feature toggle causes excessive error prompts after importing data",
+                    "updated": "2026-02-07T17:23:00.156000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "CRITES-2",
+                    "components": [
+                        "Remodeled Evaluation Activity",
+                        "Structured Grouping Structure"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The current obstacle is a CDN integration that relies on legacy APIs with overlapping data. Document any findings during the debugging process to improve issue resolution time in the future. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:22:56.781000+05:30",
+                    "summary": "Traffic update overuses animations during deployments",
+                    "updated": "2026-02-07T17:22:58.651000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:22:58.643000+05:30",
+                    "issue_key": "CRITES-1",
+                    "components": [
+                        "Structured Grouping Structure"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "Here we have a server instance that fails in staging environments on mobile devices. Improve test coverage to ensure similar problems are caught early in the development cycle. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "CRITES",
+                "project_name": "Critical-Thinking Tech Sales Annotation",
+                "project_type": "software"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "bug"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:26:39.984000+05:30",
+                    "summary": "Version control is dependent on unreliable components in notifications center",
+                    "updated": "2026-02-07T17:34:32.566000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:26:41.083000+05:30",
+                    "issue_key": "DYNSAE-18",
+                    "components": [
+                        "Cutting-Edge Scheduler Window"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 51420,
+                    "description": "This task is concerned with a scoped access that breaks shortcuts on image resizing. Provide a more informative error message or user feedback to improve usability. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:38.127000+05:30",
+                    "summary": "Lambda handler does not handle required fields correctly on recurring jobs",
+                    "updated": "2026-02-07T17:26:39.326000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-17",
+                    "components": [
+                        "Cutting-Edge Scheduler Window",
+                        "Durable Bootstrap Element Container",
+                        "Proven Processor Core"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "Our team has identified a filtering mechanism that fails in staging environments under accessibility modes. Improve test coverage to ensure similar problems are caught early in the development cycle. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:36.740000+05:30",
+                    "summary": "Filtering mechanism causes unnecessary API calls when handling files",
+                    "updated": "2026-02-08T02:32:37.643000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-16",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": 538680,
+                    "description": "An important concern is raised about a bootstrap integration that has issues with file uploads after migration. Document a repeatable solution to prevent related issues from occurring in the future. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "feature",
+                        "high-priority",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "Backlog",
+                    "created": "2026-02-07T17:26:35.280000+05:30",
+                    "summary": "Backend health check is non-native on certain platforms under heavy load",
+                    "updated": "2026-02-07T17:34:39.560000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-15",
+                    "components": [
+                        "Artificial Permission Structure Recycle Point",
+                        "Stable Interface Workspace",
+                        "Supportive Iteration Structure"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": 392580,
+                    "description": "The report sheds light on a billing process that is vulnerable to injection attacks with long text values. Build additional unit and integration tests to cover potential failure points. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:33.164000+05:30",
+                    "summary": "Feature freeze uses too many resources on system critical paths",
+                    "updated": "2026-02-07T17:26:34.324000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-14",
+                    "components": [
+                        "Supportive Iteration Structure"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "Our diagnostics reveal a problem with a grammar checker that needs clearer design on production servers. Document any findings during the debugging process to improve issue resolution time in the future. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "Backlog",
+                    "created": "2026-02-07T17:26:31.159000+05:30",
+                    "summary": "Search system is not backward-compatible with long text values",
+                    "updated": "2026-02-07T17:26:31.230000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-13",
+                    "components": [
+                        "Artificial Permission Structure Recycle Point",
+                        "Proven Processor Core"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The report sheds light on a query optimization that needs animation improvements on subscription renewals. Check related logs for specific error messages or patterns that could help isolate the problem. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:29.311000+05:30",
+                    "summary": "Task assignment overuses animations with hover effects",
+                    "updated": "2026-02-07T17:26:30.494000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-12",
+                    "components": [
+                        "Cutting-Edge Scheduler Window",
+                        "Durable Bootstrap Element Container",
+                        "Stable Interface Workspace"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This issue relates to a API reference that requires testing improvements on system critical paths. Implement a fallback mechanism to handle failure scenarios gracefully. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Backlog",
+                    "created": "2026-02-07T17:26:27.782000+05:30",
+                    "summary": "Registration is slow to respond on sorting mixed data",
+                    "updated": "2026-02-07T17:34:50.594000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-11",
+                    "components": [
+                        "Visible Setup Routine Feedback"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": 608340,
+                    "description": "Our team has identified a template that lacks concurrency support in notifications center. Tap into monitoring tools to assess the system's performance under stress. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:24:28.005000+05:30",
+                    "summary": "Return process requires testing improvements after cancellation",
+                    "updated": "2026-02-07T17:24:29.570000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:24:29.551000+05:30",
+                    "issue_key": "DYNSAE-10",
+                    "components": [
+                        "Artificial Permission Structure Recycle Point",
+                        "Proven Processor Core",
+                        "Selective Workflow Setup Workflow Handler"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This query involves a error tracker that is broken with toggled settings. Optimize the database queries or APIs involved to improve overall system reliability. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Backlog",
+                    "created": "2026-02-07T17:24:26.632000+05:30",
+                    "summary": "Vue component causes issues with session tokens when restoring data",
+                    "updated": "2026-02-07T17:24:26.729000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-9",
+                    "components": [
+                        "Durable Bootstrap Element Container",
+                        "Proven Processor Core",
+                        "Selective Workflow Setup Workflow Handler"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Here we have a error boundary that causes UI glitches during file deletions. Conduct a detailed analysis of the performance bottlenecks and implement optimizations. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:24:24.353000+05:30",
+                    "summary": "API endpoint has hardcoded labels in user avatars",
+                    "updated": "2026-02-07T17:24:25.902000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:24:25.896000+05:30",
+                    "issue_key": "DYNSAE-8",
+                    "components": [
+                        "Durable Bootstrap Element Container"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This is a critical issue involving a reactive programming that causes UI to freeze with unread messages. Address the issue with a proof-of-concept (POC) for an alternative approach if needed. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "documentation",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "Backlog",
+                    "created": "2026-02-07T17:24:22.886000+05:30",
+                    "summary": "User behavior analysis has overlapping elements with too many results",
+                    "updated": "2026-02-07T17:24:22.965000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-7",
+                    "components": [
+                        "Visible Setup Routine Feedback"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "An important concern is raised about a scoped access that needs pagination updates on form inputs. Simulate real-world use cases to understand the issue under practical conditions. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "improvement"
+                    ],
+                    "sprint": null,
+                    "status": "Selected for Development",
+                    "created": "2026-02-07T17:24:21.006000+05:30",
+                    "summary": "Desktop optimization outputs incorrect data formats with specific parameters",
+                    "updated": "2026-02-07T17:24:22.212000+05:30",
+                    "assignee": "John Doe",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-6",
+                    "components": [
+                        "Durable Bootstrap Element Container",
+                        "Selective Workflow Setup Workflow Handler",
+                        "Stable Interface Workspace"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "There seems to be an error concerning a static code analysis that causes layout distortions in admin view. Document a repeatable solution to prevent related issues from occurring in the future. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "critical",
+                        "improvement"
+                    ],
+                    "sprint": null,
+                    "status": "Selected for Development",
+                    "created": "2026-02-07T17:24:18.666000+05:30",
+                    "summary": "Real-time update breaks when resized during file deletions",
+                    "updated": "2026-02-07T17:24:20.306000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-5",
+                    "components": [
+                        "Cutting-Edge Scheduler Window",
+                        "Durable Bootstrap Element Container",
+                        "Stable Interface Workspace"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This problem pertains to a regression test that cannot handle extended text fields in notifications center. Check if deprecated APIs or functionality are causing conflicts or failures. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "improvement"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:24:16.356000+05:30",
+                    "summary": "Lambda handler contains frequent type mismatches on modal pop-ups",
+                    "updated": "2026-02-07T17:24:18.022000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-4",
+                    "components": [
+                        "Cutting-Edge Scheduler Window",
+                        "Stable Interface Workspace",
+                        "Supportive Iteration Structure"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This matter involves a data sample that outputs incorrect data formats with scheduled tasks. Align the workflows between different systems/modules to avoid inconsistencies. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Backlog",
+                    "created": "2026-02-07T17:24:14.640000+05:30",
+                    "summary": "Error log is too complex during archiving",
+                    "updated": "2026-02-07T17:24:14.693000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-3",
+                    "components": [
+                        "Durable Bootstrap Element Container",
+                        "Selective Workflow Setup Workflow Handler",
+                        "Stable Interface Workspace"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A noticeable issue has occurred with a asynchronous call that outputs incorrect data formats with overlapping data. Evaluate compatibility with the latest framework or library versions being used. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Selected for Development",
+                    "created": "2026-02-07T17:24:11.768000+05:30",
+                    "summary": "CSS animation produces redundant notifications on first use",
+                    "updated": "2026-02-07T17:24:13.296000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-2",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This issue relates to a registration that is vulnerable to injection attacks on subscription renewals. Check if deprecated APIs or functionality are causing conflicts or failures. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "high-priority",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:24:08.572000+05:30",
+                    "summary": "Delivery tracker fails in staging environments with toggled settings",
+                    "updated": "2026-02-07T17:24:10.011000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "DYNSAE-1",
+                    "components": [],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This task is concerned with a observable that needs migration support in sandbox environments. Align the workflows between different systems/modules to avoid inconsistencies. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "DYNSAE",
+                "project_name": "Dynamic Sales Enablement Resolution Panel",
+                "project_type": "software"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "investigation",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:57.414000+05:30",
+                    "summary": "Postmortem produces unpredictable state changes with long text values",
+                    "updated": "2026-02-07T17:26:58.829000+05:30",
+                    "assignee": "John Doe",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-18",
+                    "components": [],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "Our team has identified a patch release that produces runtime errors on corrupted files. Talk with stakeholders to prioritize this issue and determine its business impact. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "frontend",
+                        "improvement",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:55.598000+05:30",
+                    "summary": "Performance audit requires a design overhaul using deprecated functions",
+                    "updated": "2026-02-07T17:34:53.697000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-17",
+                    "components": [
+                        "Expandable Synchronization Checkpoint"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": 139200,
+                    "description": "This task is concerned with a database connection that is not responsive in printable views. Simulate real-world use cases to understand the issue under practical conditions. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:26:53.659000+05:30",
+                    "summary": "Repository clone fails during state transitions on touch devices",
+                    "updated": "2026-02-07T17:26:54.919000+05:30",
+                    "assignee": "John Doe",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:26:54.895000+05:30",
+                    "issue_key": "EMPTES-16",
+                    "components": [
+                        "Meaningful Queue Lifecycle",
+                        "Nimble Component Cache",
+                        "Well-Defined Content Thread Controller"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "Attention is needed for a light mode that causes UI to freeze on system critical paths. Evaluate compatibility with the latest framework or library versions being used. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:26:51.823000+05:30",
+                    "summary": "Repository clone blocks unrelated actions during backups",
+                    "updated": "2026-02-07T17:26:52.955000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:26:52.933000+05:30",
+                    "issue_key": "EMPTES-15",
+                    "components": [
+                        "Fail-Safe Registry Repository",
+                        "Improved User Decoder",
+                        "Well-Defined Content Thread Controller"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The report sheds light on a patch release that overuses animations when handling files. Talk with stakeholders to prioritize this issue and determine its business impact. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:26:50.095000+05:30",
+                    "summary": "Audit log does not support dark mode in checkout pages",
+                    "updated": "2026-02-07T17:26:51.242000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-14",
+                    "components": [
+                        "Meaningful Queue Lifecycle"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This query involves a query parameter that is unpredictably slow on nested sections. Collaborate with team members to brainstorm potential solutions and share insights. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:26:47.852000+05:30",
+                    "summary": "A/B test causes memory leaks during form submissions",
+                    "updated": "2026-02-07T17:26:49.011000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:26:49.003000+05:30",
+                    "issue_key": "EMPTES-13",
+                    "components": [
+                        "Expandable Synchronization Checkpoint",
+                        "Fail-Safe Registry Repository"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This problem is associated with a accessibility feature that has no loading indicator under accessibility modes. Simulate real-world use cases to understand the issue under practical conditions. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:26:45.824000+05:30",
+                    "summary": "CPU optimization causes memory leaks on login attempts",
+                    "updated": "2026-02-07T17:26:47.149000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:26:47.129000+05:30",
+                    "issue_key": "EMPTES-12",
+                    "components": [
+                        "Expandable Synchronization Checkpoint",
+                        "Fail-Safe Registry Repository",
+                        "Nimble Component Cache"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This task is concerned with a version control that is unreliable with large datasets in sidebar navigation. Improve test coverage to ensure similar problems are caught early in the development cycle. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:26:44.123000+05:30",
+                    "summary": "Login produces UI elements that overlap on image resizing",
+                    "updated": "2026-02-07T17:26:44.199000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-11",
+                    "components": [
+                        "Expandable Synchronization Checkpoint",
+                        "Fail-Safe Registry Repository"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The current obstacle is a agile workflow that causes memory leaks with outdated dependencies. Double-check for any outdated dependencies and update them if necessary. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:48.386000+05:30",
+                    "summary": "Image thumbnail contains excessive external dependencies with specific parameters",
+                    "updated": "2026-02-07T17:35:00.374000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-10",
+                    "components": [
+                        "High-Performance Soft Limit Node"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 201660,
+                    "description": "An important concern is raised about a query parameter that results in failed builds on collapsed views. Set up additional logging and monitoring for better observability during runtime. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:47.033000+05:30",
+                    "summary": "Patch release lacks onboarding workflow on logout",
+                    "updated": "2026-02-07T17:24:47.101000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-9",
+                    "components": [
+                        "High-Performance Interaction Layer Integration Adapter",
+                        "Improved User Decoder",
+                        "Meaningful Queue Lifecycle"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This problem pertains to a widget that is too complex in the help center. Collaborate with team members to brainstorm potential solutions and share insights. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "bug"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:24:45.221000+05:30",
+                    "summary": "Email notification needs improved dropdowns with scheduled tasks",
+                    "updated": "2026-02-07T17:24:46.458000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:24:46.451000+05:30",
+                    "issue_key": "EMPTES-8",
+                    "components": [
+                        "Fail-Safe Registry Repository",
+                        "Well-Defined Content Thread Controller"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A key problem has been identified with a branching strategy that produces incorrect results on sorting mixed data. Consider modularizing the relevant portions of code for better scalability and reuse. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:43.547000+05:30",
+                    "summary": "UI component has localization errors on drag and drop",
+                    "updated": "2026-02-07T17:35:06.993000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-7",
+                    "components": [
+                        "Meaningful Queue Lifecycle",
+                        "Well-Defined Content Thread Controller"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 411060,
+                    "description": "Our diagnostics reveal a problem with a QR code generator that requires a reskin on tooltips. Set up additional logging and monitoring for better observability during runtime. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:24:41.078000+05:30",
+                    "summary": "Query parameter needs optimization on restricted features",
+                    "updated": "2026-02-07T17:24:42.232000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-6",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This issue relates to a billing process that has issues with file uploads in notifications. Document any findings during the debugging process to improve issue resolution time in the future. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "frontend",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:24:39.170000+05:30",
+                    "summary": "Version control does not handle exceptions properly with high latency",
+                    "updated": "2026-02-07T17:24:40.431000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:24:40.409000+05:30",
+                    "issue_key": "EMPTES-5",
+                    "components": [
+                        "Expandable Synchronization Checkpoint",
+                        "Meaningful Queue Lifecycle"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This is a critical issue involving a customer survey that leads to unreadable navigation paths in session recordings. Analyze the issue thoroughly and identify the steps to reproduce it. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "feature"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:37.321000+05:30",
+                    "summary": "Disk analysis does not clean up resources in session recordings",
+                    "updated": "2026-02-07T17:24:37.495000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-4",
+                    "components": [
+                        "Meaningful Queue Lifecycle"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This ticket highlights a scheduled task that breaks when resized in expanded details. Trace the code paths to locate specific areas of failure or potential risks. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "high-priority",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:35.295000+05:30",
+                    "summary": "Feature request skips some required validations on API calls",
+                    "updated": "2026-02-07T17:34:57.689000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-3",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": 209880,
+                    "description": "This task is concerned with a backend health check that contains misleading instructions randomly. Ensure the functionality aligns with the original requirements and expected behaviors. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "frontend",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:34+05:30",
+                    "summary": "Return process relies on incorrect date formatting in payment gateways",
+                    "updated": "2026-02-07T17:24:34.089000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-2",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "Here we have a dark mode that needs better logging after retry attempts. Tap into monitoring tools to assess the system's performance under stress. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:32.434000+05:30",
+                    "summary": "Form validation produces duplicate records on offline modes",
+                    "updated": "2026-02-07T17:24:32.488000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "EMPTES-1",
+                    "components": [
+                        "Nimble Component Cache",
+                        "Well-Defined Content Thread Controller"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "This is a critical issue involving a rollback feature that lacks validation on tooltips. Consider modularizing the relevant portions of code for better scalability and reuse. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "EMPTES",
+                "project_name": "Empowered Tech Sales Structure Map",
+                "project_type": "software"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:18.047000+05:30",
+                    "summary": "Asynchronous call lacks standard sorting on nested sections",
+                    "updated": "2026-02-07T17:35:17.507000+05:30",
+                    "assignee": "John Doe",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:19.536000+05:30",
+                    "issue_key": "FASCUS-11",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 570780,
+                    "description": "An important concern is raised about a input mask that lacks concurrency support on cross-origin requests. Set up additional logging and monitoring for better observability during runtime. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:15.950000+05:30",
+                    "summary": "Feature request does not handle edge cases while archiving",
+                    "updated": "2026-02-07T17:35:44.848000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:17.030000+05:30",
+                    "issue_key": "FASCUS-10",
+                    "components": [
+                        "Key Layer Allocation",
+                        "Sustainable Capability Diagram"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 459420,
+                    "description": "Here we have a login that needs clearer state diagrams when accessing restricted resources. Prepare a patch for immediate resolution and follow it up with a long-term fix. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:27:14.214000+05:30",
+                    "summary": "Angular module is not mobile-friendly on invalid input",
+                    "updated": "2026-02-07T17:35:30.589000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "FASCUS-9",
+                    "components": [],
+                    "issue_type": "Bug",
+                    "time_spent": 660660,
+                    "description": "A key problem has been identified with a graph that requires better mobile layout on new installs. Communicate with affected stakeholders and provide a detailed timeline for resolution. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "documentation",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:12.238000+05:30",
+                    "summary": "Asynchronous call has performance issues in responsive views",
+                    "updated": "2026-02-07T17:27:13.582000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:13.561000+05:30",
+                    "issue_key": "FASCUS-8",
+                    "components": [
+                        "Next-Gen Log Checkpoint",
+                        "Optimized Platform Result",
+                        "Sustainable Capability Diagram"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The report sheds light on a delivery tracker that needs clearer state diagrams during file deletions. Engage in a code walkthrough with peers to uncover hidden vulnerabilities. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "documentation",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:10.009000+05:30",
+                    "summary": "Event tracker contains excessive external dependencies in sidebar navigation",
+                    "updated": "2026-02-07T17:27:11.177000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:11.154000+05:30",
+                    "issue_key": "FASCUS-7",
+                    "components": [
+                        "Compact Layer Compliance Model",
+                        "Next-Gen Log Checkpoint"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "The following issue was detected with a machine learning model that is dependent on unreliable components when restoring data. Conduct a detailed analysis of the performance bottlenecks and implement optimizations. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:27:07.461000+05:30",
+                    "summary": "Agile workflow is redundant with standard libraries with visual hints",
+                    "updated": "2026-02-07T19:04:04.603000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "FASCUS-6",
+                    "components": [],
+                    "issue_type": "Story",
+                    "time_spent": 314880,
+                    "description": "This matter involves a garbage collection that does not scale with load on user invitations. Consider modularizing the relevant portions of code for better scalability and reuse. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:04.853000+05:30",
+                    "summary": "Repository clone relies on legacy APIs on customized reports",
+                    "updated": "2026-02-07T17:27:06.534000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:06.510000+05:30",
+                    "issue_key": "FASCUS-5",
+                    "components": [
+                        "Key Layer Allocation"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This query involves a data sample that requires better tooltips with overlapping data. Double-check for any outdated dependencies and update them if necessary. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "improvement",
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:01.804000+05:30",
+                    "summary": "Logout exceeds limit for table entries under throttling",
+                    "updated": "2026-02-07T17:27:03.388000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:03.366000+05:30",
+                    "issue_key": "FASCUS-4",
+                    "components": [
+                        "Key Layer Allocation",
+                        "Optimized Platform Result"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This ticket highlights a angular module that causes memory leaks in timezone handling. Set up additional logging and monitoring for better observability during runtime. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "improvement",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:55.966000+05:30",
+                    "summary": "Vehicle tracker requires better mobile layout on token refresh",
+                    "updated": "2026-02-07T19:04:04.460000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "FASCUS-3",
+                    "components": [
+                        "Compact Layer Compliance Model",
+                        "Next-Gen Log Checkpoint",
+                        "Optimized Platform Result"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "Here we have a acceptance criteria that fails to initialize properly after an update. Prepare a patch for immediate resolution and follow it up with a long-term fix. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:24:54.605000+05:30",
+                    "summary": "Spell checker requires an update with unread messages",
+                    "updated": "2026-02-08T01:06:22.618000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "FASCUS-2",
+                    "components": [
+                        "Compact Layer Compliance Model",
+                        "Progressive Support Component"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": 124740,
+                    "description": "Immediate action is required for a data aggregation that produces redundant notifications in modal windows. Trace the code paths to locate specific areas of failure or potential risks. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "feature"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:24:52.038000+05:30",
+                    "summary": "Acceptance criteria has no loading indicator on API calls",
+                    "updated": "2026-02-07T17:24:53.693000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "FASCUS-1",
+                    "components": [
+                        "Clean Transactional Barrier Workspace",
+                        "Optimized Platform Result",
+                        "Simple Alignment Task Group"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This task is concerned with a memory leak that lacks onboarding workflow with infinite scrolls. Optimize the database queries or APIs involved to improve overall system reliability. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "FASCUS",
+                "project_name": "Fast Customer Service Deployment",
+                "project_type": "software"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "bug",
+                        "critical",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:01.175000+05:30",
+                    "summary": "Machine learning model leads to incorrect calculations in user guides",
+                    "updated": "2026-02-07T17:28:02.596000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:02.576000+05:30",
+                    "issue_key": "HARENO-8",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Immediate action is required for a DOM manipulation that needs optimized queries in demo modes. Align the workflows between different systems/modules to avoid inconsistencies. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:27:59.295000+05:30",
+                    "summary": "Security scan needs optimized queries with archived data",
+                    "updated": "2026-02-07T17:36:18.814000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HARENO-7",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 67380,
+                    "description": "Immediate action is required for a currency converter that has redundant code paths during form submissions. Talk with stakeholders to prioritize this issue and determine its business impact. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "critical",
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:27:57.866000+05:30",
+                    "summary": "Angular module needs input sanitization when handling files",
+                    "updated": "2026-02-07T17:36:15.953000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HARENO-6",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 283980,
+                    "description": "A key problem has been identified with a disk analysis that needs placeholder content within shared resources. Prepare a patch for immediate resolution and follow it up with a long-term fix. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "feature",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:55.283000+05:30",
+                    "summary": "Alert is misconfigured with too many results",
+                    "updated": "2026-02-07T17:27:56.909000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:56.885000+05:30",
+                    "issue_key": "HARENO-5",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The issue focuses on a neural network that leads to accidental operations on duplicate records. Verify user inputs and ensure all required validations are in place. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "feature",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:52.989000+05:30",
+                    "summary": "API endpoint is not compatible with real-time updates with visual hints",
+                    "updated": "2026-02-07T17:36:16.531000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:54.620000+05:30",
+                    "issue_key": "HARENO-4",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 23280,
+                    "description": "Immediate action is required for a account management that needs simplified flow during language change. Optimize the database queries or APIs involved to improve overall system reliability. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:27:50.746000+05:30",
+                    "summary": "Template cannot handle extended text fields with table views",
+                    "updated": "2026-02-07T17:36:17.414000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HARENO-3",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 62460,
+                    "description": "The current obstacle is a disk analysis that has hardcoded labels after cancellation. Check if deprecated APIs or functionality are causing conflicts or failures. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:27:48.832000+05:30",
+                    "summary": "License management lacks retry mechanisms after inactivity",
+                    "updated": "2026-02-07T17:27:50.035000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:27:50.027000+05:30",
+                    "issue_key": "HARENO-2",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Immediate action is required for a stress test that is unpredictably slow in search queries. Audit server logs and error tracking tools to gather more data on the issue. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "feature",
+                        "investigation",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:27:46.678000+05:30",
+                    "summary": "Account management requires an update in search queries",
+                    "updated": "2026-02-07T17:27:48.228000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HARENO-1",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Here we have a agile workflow that has alignment issues on outdated sessions. Improve test coverage to ensure similar problems are caught early in the development cycle. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "HARENO",
+                "project_name": "Hardworking Enterprise Optimization",
+                "project_type": "business"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:19.772000+05:30",
+                    "summary": "Vue component needs caching strategies under heavy load",
+                    "updated": "2026-02-07T17:28:20.881000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISOPA-8",
+                    "components": [],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This issue relates to a admin panel that has untested exception flows with missing data. Analyze the issue thoroughly and identify the steps to reproduce it. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:17.871000+05:30",
+                    "summary": "Video playback is unmaintainable during maintenance periods",
+                    "updated": "2026-02-07T17:28:19.063000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:19.043000+05:30",
+                    "issue_key": "HISOPA-7",
+                    "components": [
+                        "Dynamic Analysis Output Generator",
+                        "Simple Constraint Panel",
+                        "Single-Purpose Interaction Service Mesh"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A key problem has been identified with a resizable panel that produces empty datasets on email validation. Engage in a code walkthrough with peers to uncover hidden vulnerabilities. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:16.473000+05:30",
+                    "summary": "Heatmap fails on specific browsers in zip uploads",
+                    "updated": "2026-02-07T17:36:25.156000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISOPA-6",
+                    "components": [
+                        "Simple Constraint Panel",
+                        "Single-Purpose Interaction Service Mesh"
+                    ],
+                    "issue_type": "Task",
+                    "time_spent": 42420,
+                    "description": "Immediate action is required for a feature toggle that requires multiple retries on image resizing. Prepare a patch for immediate resolution and follow it up with a long-term fix. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:14.478000+05:30",
+                    "summary": "Report is misaligned with original specifications on dynamic fields",
+                    "updated": "2026-02-07T17:28:15.768000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:15.745000+05:30",
+                    "issue_key": "HISOPA-5",
+                    "components": [
+                        "Dynamic Analysis Output Generator"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": null,
+                    "description": "This matter involves a responsive layout that contains frequent type mismatches on slow queries. Double-check for any outdated dependencies and update them if necessary. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:12.602000+05:30",
+                    "summary": "Vue component contains misleading instructions on related entities",
+                    "updated": "2026-02-07T17:28:12.780000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISOPA-4",
+                    "components": [
+                        "Dynamic Analysis Output Generator",
+                        "Interactive Database Boundary",
+                        "Single-Purpose Interaction Service Mesh"
+                    ],
+                    "issue_type": "Story",
+                    "time_spent": null,
+                    "description": "A noticeable issue has occurred with a input mask that has missing timeouts during form submissions. Check for any resource limitations (CPU usage, memory) under load conditions. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "feature",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:09.846000+05:30",
+                    "summary": "Backend health check is not compatible with real-time updates with infinite scrolls",
+                    "updated": "2026-02-07T17:36:27.037000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISOPA-3",
+                    "components": [
+                        "Domain-Specific Concurrency Model Pipeline",
+                        "Simple Constraint Panel",
+                        "Weighted Throughput Handler Evaluation Sequence"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 95940,
+                    "description": "This task is concerned with a background process that requires a design overhaul in admin view. Implement a fallback mechanism to handle failure scenarios gracefully. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "backend"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:08.097000+05:30",
+                    "summary": "Dark mode skips some required validations on notification badges",
+                    "updated": "2026-02-07T17:36:34.675000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISOPA-2",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 387420,
+                    "description": "The current obstacle is a state management that contains excessive external dependencies on invoice generation. Ensure the functionality aligns with the original requirements and expected behaviors. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:05.473000+05:30",
+                    "summary": "Load balancing requires refactoring with hover effects",
+                    "updated": "2026-02-07T17:36:24.190000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISOPA-1",
+                    "components": [
+                        "Interactive Database Boundary",
+                        "Weighted Throughput Handler Evaluation Sequence"
+                    ],
+                    "issue_type": "Bug",
+                    "time_spent": 223080,
+                    "description": "The issue focuses on a tailwind CSS that uses inconsistent naming conventions when sorting data. Review recent code changes and ensure no regressions have been introduced. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "HISOPA",
+                "project_name": "Historic Operations Adapter",
+                "project_type": "software"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "critical"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:37.284000+05:30",
+                    "summary": "Configuration file relies on legacy APIs on production servers",
+                    "updated": "2026-02-07T17:28:38.398000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:38.378000+05:30",
+                    "issue_key": "HISSTP-8",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The current obstacle is a database connection that causes version conflicts in outdated interfaces. Ensure the functionality aligns with the original requirements and expected behaviors. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:34.900000+05:30",
+                    "summary": "Customer survey has invalid form handling with visual hints",
+                    "updated": "2026-02-07T17:36:38.201000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:36.573000+05:30",
+                    "issue_key": "HISSTP-7",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 191040,
+                    "description": "This problem pertains to a mocking utility that needs optimization during user registration. Consider refactoring the code for better readability and maintainability. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "critical"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:33.081000+05:30",
+                    "summary": "Cross-browser test is missing with scheduled tasks",
+                    "updated": "2026-02-07T17:28:34.260000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISSTP-6",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This task is concerned with a traffic update that is misaligned with original specifications with CSV exports. Check for any resource limitations (CPU usage, memory) under load conditions. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "feature",
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:31.261000+05:30",
+                    "summary": "Cloud integration needs pagination updates with unread messages",
+                    "updated": "2026-02-07T17:36:45.526000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISSTP-5",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 371280,
+                    "description": "A key problem has been identified with a unit test that produces runtime errors on paginated results. Ensure the functionality aligns with the original requirements and expected behaviors. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "improvement",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:29.309000+05:30",
+                    "summary": "Cache mechanism produces data loss under stress on new installs",
+                    "updated": "2026-02-07T17:28:30.565000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:30.556000+05:30",
+                    "issue_key": "HISSTP-4",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "An important concern is raised about a language translation that is error-prone under edge-case scenarios in rate-limited APIs. Review recent code changes and ensure no regressions have been introduced. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "documentation",
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:27.876000+05:30",
+                    "summary": "Merge conflict does not respect API standards on newly added users",
+                    "updated": "2026-02-07T17:36:53.600000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISSTP-3",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 411420,
+                    "description": "This task is concerned with a chart that causes memory leaks on tablet screens. Talk with stakeholders to prioritize this issue and determine its business impact. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "improvement",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:25.976000+05:30",
+                    "summary": "Load test ignores missing data conditions with expired tokens",
+                    "updated": "2026-02-07T17:28:27.217000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISSTP-2",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A noticeable issue has occurred with a heatmap that uses non-standard inputs in zip uploads. Optimize the database queries or APIs involved to improve overall system reliability. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "documentation",
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:24.509000+05:30",
+                    "summary": "Scrum board throws errors with undo features",
+                    "updated": "2026-02-07T17:28:24.692000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "HISSTP-1",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "An important concern is raised about a threat protection that needs input sanitization on login attempts. Communicate with affected stakeholders and provide a detailed timeline for resolution. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "HISSTP",
+                "project_name": "Historic Strategy & Planning Event",
+                "project_type": "business"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:53.636000+05:30",
+                    "summary": "Feedback form does not fully comply with standards in onboarding flows",
+                    "updated": "2026-02-07T17:36:59.274000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-8",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 275040,
+                    "description": "This is a critical issue involving a speech recognition that needs prevention for double-submit actions on outdated sessions. Document any findings during the debugging process to improve issue resolution time in the future. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "documentation",
+                        "feature",
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:52.272000+05:30",
+                    "summary": "Load balancing outputs incorrect data formats with specific parameters",
+                    "updated": "2026-02-07T17:37:08.380000+05:30",
+                    "assignee": "John Doe",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-7",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 306780,
+                    "description": "The report sheds light on a user behavior analysis that requires rollback mechanisms on multi-step forms. Check for any resource limitations (CPU usage, memory) under load conditions. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "high-priority",
+                        "refactoring"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:28:50.284000+05:30",
+                    "summary": "Neural network is incomplete with archived data",
+                    "updated": "2026-02-07T17:28:51.518000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:28:51.495000+05:30",
+                    "issue_key": "INTCLP-6",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This ticket highlights a responsive layout that requires a design overhaul in modal windows. Verify user inputs and ensure all required validations are in place. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "investigation",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:48.507000+05:30",
+                    "summary": "Stress test lacks appropriate feedback in user avatars",
+                    "updated": "2026-02-07T17:37:21.170000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-5",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 474300,
+                    "description": "This problem pertains to a database backup that produces data loss under stress during language change. Provide a more informative error message or user feedback to improve usability. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:46.667000+05:30",
+                    "summary": "User behavior analysis cannot handle extended text fields on token refresh",
+                    "updated": "2026-02-07T17:37:42.601000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-4",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 634560,
+                    "description": "Our team has identified a agile workflow that is incompatible with plugins on duplicate records. Provide a more informative error message or user feedback to improve usability. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "feature",
+                        "high-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:28:45.291000+05:30",
+                    "summary": "Event handler is dependent on unreliable components in floating buttons",
+                    "updated": "2026-02-07T17:28:45.366000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-3",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Our diagnostics reveal a problem with a chart that uses outdated patterns under accessibility modes. Ensure the functionality aligns with the original requirements and expected behaviors. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:43.408000+05:30",
+                    "summary": "Neural network leads to data corruption when sorting data",
+                    "updated": "2026-02-07T17:37:29.952000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-2",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 405840,
+                    "description": "This is a critical issue involving a registration that duplicates existing functionality with visual hints. Consider refactoring the code for better readability and maintainability. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "feature",
+                        "frontend"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:28:41.309000+05:30",
+                    "summary": "Acceptance criteria has missing timeouts on mobile devices",
+                    "updated": "2026-02-07T17:28:42.687000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "INTCLP-1",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A noticeable issue has occurred with a serverless function that is difficult to debug during audio streaming. Audit server logs and error tracking tools to gather more data on the issue. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "INTCLP",
+                "project_name": "Intelligent Cloud Pipeline",
+                "project_type": "business"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "improvement",
+                        "investigation",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:29:47.033000+05:30",
+                    "summary": "Promise times out in the help center",
+                    "updated": "2026-02-07T17:29:48.184000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:29:48.163000+05:30",
+                    "issue_key": "STUDAS-8",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This is a critical issue involving a react component that requires dependency updates in modal windows. Verify all configurations and environment variables to rule out misconfigurations. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:29:45.096000+05:30",
+                    "summary": "Performance audit does not persist user preferences while clearing caches",
+                    "updated": "2026-02-07T17:29:46.308000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "STUDAS-7",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "An important concern is raised about a lambda handler that needs prevention for double-submit actions with refunds. Engage in a code walkthrough with peers to uncover hidden vulnerabilities. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:29:42.928000+05:30",
+                    "summary": "End-to-end test ignores missing data conditions on outdated sessions",
+                    "updated": "2026-02-07T17:38:45.783000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:29:44.170000+05:30",
+                    "issue_key": "STUDAS-6",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 422880,
+                    "description": "The current obstacle is a drag-and-drop feature that produces unreadable logs in broken links. Audit server logs and error tracking tools to gather more data on the issue. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:29:39.707000+05:30",
+                    "summary": "Code review has redundant code paths under throttling",
+                    "updated": "2026-02-07T17:38:35.978000+05:30",
+                    "assignee": "alice.johnson@company.com",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "STUDAS-5",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 406260,
+                    "description": "Here we have a event handler that is not visually clear with long text values. Analyze the issue thoroughly and identify the steps to reproduce it. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "documentation",
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:29:37.875000+05:30",
+                    "summary": "Promise requires better tooltips in bulk operations",
+                    "updated": "2026-02-07T17:29:38.987000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "STUDAS-4",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A key problem has been identified with a event tracker that requires dependency updates with high-resolution images. Double-check for any outdated dependencies and update them if necessary. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "high-priority",
+                        "refactoring",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:29:36.131000+05:30",
+                    "summary": "Bug backlog requires dependency injection on user timeout",
+                    "updated": "2026-02-07T17:38:53.616000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:29:37.231000+05:30",
+                    "issue_key": "STUDAS-3",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 385980,
+                    "description": "This ticket highlights a socket connection that has excessive CPU usage on production servers. Double-check for any outdated dependencies and update them if necessary. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "bug",
+                        "feature"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:29:34.710000+05:30",
+                    "summary": "Load test is not compatible with real-time updates in user guides",
+                    "updated": "2026-02-07T17:39:02.372000+05:30",
+                    "assignee": "Rudra",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "STUDAS-2",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 468360,
+                    "description": "This issue relates to a error tracker that produces redundant notifications for regular user roles. Verify all configurations and environment variables to rule out misconfigurations. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "high-priority",
+                        "investigation",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:29:32.952000+05:30",
+                    "summary": "Infrastructure deployment produces duplicate records with sticky headers",
+                    "updated": "2026-02-07T17:38:24.137000+05:30",
+                    "assignee": "Rishi Vejani",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "STUDAS-1",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 239040,
+                    "description": "This issue relates to a historical record that requires refactoring with infinite scrolls. Talk with stakeholders to prioritize this issue and determine its business impact. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "STUDAS",
+                "project_name": "Stunning Data Science Checklist Item",
+                "project_type": "business"
+            }
+        },
+        {
+            "issues": [
+                {
+                    "labels": [
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:30:02.303000+05:30",
+                    "summary": "Dashboard has security vulnerabilities with infinite scrolls",
+                    "updated": "2026-02-07T17:39:23.919000+05:30",
+                    "assignee": "dakshgoapni0123",
+                    "priority": "Low",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-8",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 267060,
+                    "description": "The current obstacle is a authentication token that fails during state transitions with high-resolution images. Build additional unit and integration tests to cover potential failure points. It would be great to address this quickly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "frontend",
+                        "improvement"
+                    ],
+                    "sprint": null,
+                    "status": "Done",
+                    "created": "2026-02-07T17:30:00.109000+05:30",
+                    "summary": "Reactive programming does not support dark mode on form inputs",
+                    "updated": "2026-02-07T17:30:01.418000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": "2026-02-07T17:30:01.399000+05:30",
+                    "issue_key": "UNSCOC-7",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "Attention is needed for a cache mechanism that needs prevention for double-submit actions in responsive views. Provide a more informative error message or user feedback to improve usability. Your immediate attention to this matter is required.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "backend",
+                        "improvement"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:29:58.615000+05:30",
+                    "summary": "Query parameter is unmaintainable with temporary files",
+                    "updated": "2026-02-07T17:29:58.788000+05:30",
+                    "assignee": "Samyak Chheda",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-6",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "The current obstacle is a memory leak that produces UI elements that overlap with infinite scrolls. Check if deprecated APIs or functionality are causing conflicts or failures. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:29:56.837000+05:30",
+                    "summary": "Query parameter has low test coverage with multiple tabs",
+                    "updated": "2026-02-07T17:29:57.903000+05:30",
+                    "assignee": "Bob Smith",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-5",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "A key problem has been identified with a serverless function that fails under load on corrupted files. Address the issue with a proof-of-concept (POC) for an alternative approach if needed. Please prioritize its resolution as soon as possible.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "feature",
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:29:55.483000+05:30",
+                    "summary": "Stress test uses too many resources on login attempts",
+                    "updated": "2026-02-07T17:39:18.252000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "Medium",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-4",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 438180,
+                    "description": "The issue focuses on a user behavior analysis that times out on restricted features. Check related logs for specific error messages or patterns that could help isolate the problem. Handling it swiftly is advisable.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "feature",
+                        "low-priority"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:29:54.045000+05:30",
+                    "summary": "Data aggregation needs improved dropdowns during backups",
+                    "updated": "2026-02-07T17:39:09.813000+05:30",
+                    "assignee": "david.wilson@company.com",
+                    "priority": "High",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-3",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 322020,
+                    "description": "A key problem has been identified with a invoice that lacks validation with too many results. Collaborate with team members to brainstorm potential solutions and share insights. Kindly ensure this is resolved promptly.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                },
+                {
+                    "labels": [
+                        "critical",
+                        "investigation"
+                    ],
+                    "sprint": null,
+                    "status": "In Progress",
+                    "created": "2026-02-07T17:29:52.197000+05:30",
+                    "summary": "Data validation breaks when resized after file corruption",
+                    "updated": "2026-02-07T17:29:53.357000+05:30",
+                    "assignee": "carol.davis",
+                    "priority": "Highest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-2",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": null,
+                    "description": "This is a critical issue involving a form validation that ignores missing data conditions on recurring jobs. Improve test coverage to ensure similar problems are caught early in the development cycle. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": null
+                },
+                {
+                    "labels": [
+                        "frontend",
+                        "testing"
+                    ],
+                    "sprint": null,
+                    "status": "To Do",
+                    "created": "2026-02-07T17:29:50.776000+05:30",
+                    "summary": "Background process produces runtime errors with screen readers",
+                    "updated": "2026-02-07T17:39:34.963000+05:30",
+                    "assignee": "eve.martinez",
+                    "priority": "Lowest",
+                    "reporter": "Rudra",
+                    "resolved": null,
+                    "issue_key": "UNSCOC-1",
+                    "components": [],
+                    "issue_type": "Task",
+                    "time_spent": 529320,
+                    "description": "The current obstacle is a tablet support that needs updates for recent standards on unauthorized access. Set up additional logging and monitoring for better observability during runtime. Resolution at the earliest convenience is recommended.",
+                    "project_key": "",
+                    "story_points": null,
+                    "time_estimate": 0
+                }
+            ],
+            "project_info": {
+                "lead": null,
+                "description": null,
+                "project_key": "UNSCOC",
+                "project_name": "Unshakeable Corporate Communications Scaling Metric",
+                "project_type": "business"
+            }
+        }
+    ],
+    "webhook_event": {
+        "user": {
+            "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/user?accountId=712020%3A3d19b95d-5f93-4bdb-9860-c169c9855a72",
+            "active": true,
+            "timeZone": "Asia/Calcutta",
+            "accountId": "712020:3d19b95d-5f93-4bdb-9860-c169c9855a72",
+            "avatarUrls": {
+                "16x16": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                "24x24": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                "32x32": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                "48x48": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png"
+            },
+            "accountType": "atlassian",
+            "displayName": "Rudra"
+        },
+        "issue": {
+            "id": "10110",
+            "key": "DYNSAE-16",
+            "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/issue/10110",
+            "fields": {
+                "votes": {
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/issue/DYNSAE-16/votes",
+                    "votes": 0,
+                    "hasVoted": false
+                },
+                "labels": [
+                    "critical",
+                    "testing"
+                ],
+                "status": {
+                    "id": "3",
+                    "name": "In Progress",
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/status/3",
+                    "iconUrl": "https://rudraparmar1309-1770450259652.atlassian.net/images/icons/statuses/inprogress.png",
+                    "description": "This issue is being actively worked on at the moment by the assignee.",
+                    "statusCategory": {
+                        "id": 4,
+                        "key": "indeterminate",
+                        "name": "In Progress",
+                        "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/statuscategory/4",
+                        "colorName": "yellow"
+                    }
+                },
+                "created": "2026-02-07T17:26:36.740+0530",
+                "creator": {
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/user?accountId=712020%3A3d19b95d-5f93-4bdb-9860-c169c9855a72",
+                    "active": true,
+                    "timeZone": "Asia/Calcutta",
+                    "accountId": "712020:3d19b95d-5f93-4bdb-9860-c169c9855a72",
+                    "avatarUrls": {
+                        "16x16": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                        "48x48": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png"
+                    },
+                    "accountType": "atlassian",
+                    "displayName": "Rudra"
+                },
+                "duedate": null,
+                "project": {
+                    "id": "10012",
+                    "key": "DYNSAE",
+                    "name": "Dynamic Sales Enablement Resolution Panel",
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/project/10012",
+                    "avatarUrls": {
+                        "16x16": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10403?size=xsmall",
+                        "24x24": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10403?size=small",
+                        "32x32": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10403?size=medium",
+                        "48x48": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10403"
+                    },
+                    "simplified": false,
+                    "projectTypeKey": "software"
+                },
+                "summary": "Filtering mechanism causes unnecessary API calls when handling files",
+                "updated": "2026-02-08T02:32:37.643+0530",
+                "watches": {
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/issue/DYNSAE-16/watchers",
+                    "isWatching": true,
+                    "watchCount": 1
+                },
+                "assignee": {
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/user?accountId=712020%3Adf15b623-22c0-4e28-8031-25476b2b232c",
+                    "active": true,
+                    "timeZone": "Asia/Calcutta",
+                    "accountId": "712020:df15b623-22c0-4e28-8031-25476b2b232c",
+                    "avatarUrls": {
+                        "16x16": "https://secure.gravatar.com/avatar/10491ed90553e3cdae1806e8ee859d7e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png",
+                        "24x24": "https://secure.gravatar.com/avatar/10491ed90553e3cdae1806e8ee859d7e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png",
+                        "32x32": "https://secure.gravatar.com/avatar/10491ed90553e3cdae1806e8ee859d7e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png",
+                        "48x48": "https://secure.gravatar.com/avatar/10491ed90553e3cdae1806e8ee859d7e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png"
+                    },
+                    "accountType": "atlassian",
+                    "displayName": "Samyak Chheda"
+                },
+                "priority": {
+                    "id": "4",
+                    "name": "Low",
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/priority/4",
+                    "iconUrl": "https://rudraparmar1309-1770450259652.atlassian.net/images/icons/priorities/low_new.svg"
+                },
+                "progress": {
+                    "total": 538680,
+                    "percent": 100,
+                    "progress": 538680
+                },
+                "reporter": {
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/user?accountId=712020%3A3d19b95d-5f93-4bdb-9860-c169c9855a72",
+                    "active": true,
+                    "timeZone": "Asia/Calcutta",
+                    "accountId": "712020:3d19b95d-5f93-4bdb-9860-c169c9855a72",
+                    "avatarUrls": {
+                        "16x16": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png",
+                        "48x48": "https://secure.gravatar.com/avatar/7830ae760584293c7ad5ff373bd73768?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-4.png"
+                    },
+                    "accountType": "atlassian",
+                    "displayName": "Rudra"
+                },
+                "security": null,
+                "subtasks": [],
+                "versions": [],
+                "issuetype": {
+                    "id": "10005",
+                    "name": "Story",
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/issuetype/10005",
+                    "iconUrl": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10300?size=medium",
+                    "subtask": false,
+                    "avatarId": 10300,
+                    "description": "Stories track functionality or features expressed as user goals.",
+                    "hierarchyLevel": 0
+                },
+                "timespent": 538680,
+                "workratio": -1,
+                "attachment": [],
+                "components": [],
+                "issuelinks": [],
+                "lastViewed": null,
+                "resolution": null,
+                "description": "An important concern is raised about a bootstrap integration that has issues with file uploads after migration. Document a repeatable solution to prevent related issues from occurring in the future. It would be great to address this quickly.",
+                "environment": null,
+                "fixVersions": [],
+                "timeestimate": 0,
+                "timetracking": {
+                    "timeSpent": "3w 3d 5h 38m",
+                    "timeSpentSeconds": 538680,
+                    "remainingEstimate": "0m",
+                    "remainingEstimateSeconds": 0
+                },
+                "resolutiondate": null,
+                "statusCategory": {
+                    "id": 4,
+                    "key": "indeterminate",
+                    "name": "In Progress",
+                    "self": "https://rudraparmar1309-1770450259652.atlassian.net/rest/api/2/statuscategory/4",
+                    "colorName": "yellow"
+                },
+                "aggregateprogress": {
+                    "total": 538680,
+                    "percent": 100,
+                    "progress": 538680
+                },
+                "customfield_10001": null,
+                "customfield_10002": [],
+                "customfield_10003": null,
+                "customfield_10004": null,
+                "customfield_10005": null,
+                "customfield_10006": null,
+                "customfield_10007": null,
+                "customfield_10008": null,
+                "customfield_10009": null,
+                "customfield_10010": null,
+                "customfield_10014": null,
+                "customfield_10015": null,
+                "customfield_10016": null,
+                "customfield_10017": null,
+                "customfield_10019": "0|i000o7:",
+                "customfield_10020": null,
+                "customfield_10021": null,
+                "customfield_10022": null,
+                "customfield_10023": null,
+                "customfield_10024": null,
+                "customfield_10025": null,
+                "customfield_10026": null,
+                "customfield_10027": null,
+                "customfield_10028": null,
+                "customfield_10029": null,
+                "customfield_10030": null,
+                "customfield_10031": null,
+                "customfield_10032": null,
+                "customfield_10033": null,
+                "customfield_10035": null,
+                "customfield_10036": null,
+                "customfield_10037": null,
+                "customfield_10038": null,
+                "customfield_10039": null,
+                "customfield_10042": null,
+                "aggregatetimespent": 538680,
+                "timeoriginalestimate": null,
+                "aggregatetimeestimate": 0,
+                "statuscategorychangedate": "2026-02-08T02:32:37.644+0530",
+                "aggregatetimeoriginalestimate": null
+            }
+        },
+        "changelog": {
+            "id": "11125",
+            "items": [
+                {
+                    "to": "3",
+                    "from": "10025",
+                    "field": "status",
+                    "fieldId": "status",
+                    "toString": "In Progress",
+                    "fieldtype": "jira",
+                    "fromString": "Backlog"
+                }
+            ]
+        },
+        "timestamp": 1770498157643,
+        "webhookEvent": "jira:issue_updated",
+        "issue_event_type_name": "issue_generic"
+    },
+    "assigned_issues": [
+        {
+            "labels": [
+                "bug",
+                "feature"
+            ],
+            "sprint": null,
+            "status": "To Do",
+            "created": "2026-02-07T17:29:34.710000+05:30",
+            "summary": "Load test is not compatible with real-time updates in user guides",
+            "updated": "2026-02-07T17:39:02.372000+05:30",
+            "assignee": "Rudra",
+            "priority": "Low",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "STUDAS-2",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": 468360,
+            "description": "This issue relates to a error tracker that produces redundant notifications for regular user roles. Verify all configurations and environment variables to rule out misconfigurations. Kindly ensure this is resolved promptly.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": 0
+        },
+        {
+            "labels": [],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:28:53.636000+05:30",
+            "summary": "Feedback form does not fully comply with standards in onboarding flows",
+            "updated": "2026-02-07T17:36:59.274000+05:30",
+            "assignee": "Rudra",
+            "priority": "Medium",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "INTCLP-8",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": 275040,
+            "description": "This is a critical issue involving a speech recognition that needs prevention for double-submit actions on outdated sessions. Document any findings during the debugging process to improve issue resolution time in the future. It would be great to address this quickly.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": 0
+        },
+        {
+            "labels": [
+                "bug",
+                "feature",
+                "frontend"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:28:31.261000+05:30",
+            "summary": "Cloud integration needs pagination updates with unread messages",
+            "updated": "2026-02-07T17:36:45.526000+05:30",
+            "assignee": "Rudra",
+            "priority": "Low",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HISSTP-5",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": 371280,
+            "description": "A key problem has been identified with a unit test that produces runtime errors on paginated results. Ensure the functionality aligns with the original requirements and expected behaviors. Your immediate attention to this matter is required.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": 0
+        },
+        {
+            "labels": [
+                "backend"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:27:59.295000+05:30",
+            "summary": "Security scan needs optimized queries with archived data",
+            "updated": "2026-02-07T17:36:18.814000+05:30",
+            "assignee": "Rudra",
+            "priority": "High",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HARENO-7",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": 67380,
+            "description": "Immediate action is required for a currency converter that has redundant code paths during form submissions. Talk with stakeholders to prioritize this issue and determine its business impact. Please prioritize its resolution as soon as possible.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": 0
+        },
+        {
+            "labels": [
+                "bug"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:27:50.746000+05:30",
+            "summary": "Template cannot handle extended text fields with table views",
+            "updated": "2026-02-07T17:36:17.414000+05:30",
+            "assignee": "Rudra",
+            "priority": "Highest",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HARENO-3",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": 62460,
+            "description": "The current obstacle is a disk analysis that has hardcoded labels after cancellation. Check if deprecated APIs or functionality are causing conflicts or failures. It would be great to address this quickly.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": 0
+        },
+        {
+            "labels": [],
+            "sprint": null,
+            "status": "To Do",
+            "created": "2026-02-07T17:24:43.547000+05:30",
+            "summary": "UI component has localization errors on drag and drop",
+            "updated": "2026-02-07T17:35:06.993000+05:30",
+            "assignee": "Rudra",
+            "priority": "High",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "EMPTES-7",
+            "components": [
+                "Meaningful Queue Lifecycle",
+                "Well-Defined Content Thread Controller"
+            ],
+            "issue_type": "Bug",
+            "time_spent": 411060,
+            "description": "Our diagnostics reveal a problem with a QR code generator that requires a reskin on tooltips. Set up additional logging and monitoring for better observability during runtime. It would be great to address this quickly.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": 0
+        },
+        {
+            "labels": [
+                "documentation",
+                "investigation"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:29:37.875000+05:30",
+            "summary": "Promise requires better tooltips in bulk operations",
+            "updated": "2026-02-07T17:29:38.987000+05:30",
+            "assignee": "Rudra",
+            "priority": "High",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "STUDAS-4",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "A key problem has been identified with a event tracker that requires dependency updates with high-resolution images. Double-check for any outdated dependencies and update them if necessary. Resolution at the earliest convenience is recommended.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "backend",
+                "high-priority",
+                "refactoring"
+            ],
+            "sprint": null,
+            "status": "Done",
+            "created": "2026-02-07T17:28:50.284000+05:30",
+            "summary": "Neural network is incomplete with archived data",
+            "updated": "2026-02-07T17:28:51.518000+05:30",
+            "assignee": "Rudra",
+            "priority": "High",
+            "reporter": "Rudra",
+            "resolved": "2026-02-07T17:28:51.495000+05:30",
+            "issue_key": "INTCLP-6",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "This ticket highlights a responsive layout that requires a design overhaul in modal windows. Verify user inputs and ensure all required validations are in place. Resolution at the earliest convenience is recommended.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "critical"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:28:33.081000+05:30",
+            "summary": "Cross-browser test is missing with scheduled tasks",
+            "updated": "2026-02-07T17:28:34.260000+05:30",
+            "assignee": "Rudra",
+            "priority": "Lowest",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HISSTP-6",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "This task is concerned with a traffic update that is misaligned with original specifications with CSV exports. Check for any resource limitations (CPU usage, memory) under load conditions. Your immediate attention to this matter is required.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "bug",
+                "improvement",
+                "testing"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:28:25.976000+05:30",
+            "summary": "Load test ignores missing data conditions with expired tokens",
+            "updated": "2026-02-07T17:28:27.217000+05:30",
+            "assignee": "Rudra",
+            "priority": "Medium",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HISSTP-2",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "A noticeable issue has occurred with a heatmap that uses non-standard inputs in zip uploads. Optimize the database queries or APIs involved to improve overall system reliability. Resolution at the earliest convenience is recommended.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:28:19.772000+05:30",
+            "summary": "Vue component needs caching strategies under heavy load",
+            "updated": "2026-02-07T17:28:20.881000+05:30",
+            "assignee": "Rudra",
+            "priority": "Low",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HISOPA-8",
+            "components": [],
+            "issue_type": "Bug",
+            "time_spent": null,
+            "description": "This issue relates to a admin panel that has untested exception flows with missing data. Analyze the issue thoroughly and identify the steps to reproduce it. Please prioritize its resolution as soon as possible.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "bug",
+                "critical",
+                "testing"
+            ],
+            "sprint": null,
+            "status": "Done",
+            "created": "2026-02-07T17:28:01.175000+05:30",
+            "summary": "Machine learning model leads to incorrect calculations in user guides",
+            "updated": "2026-02-07T17:28:02.596000+05:30",
+            "assignee": "Rudra",
+            "priority": "Low",
+            "reporter": "Rudra",
+            "resolved": "2026-02-07T17:28:02.576000+05:30",
+            "issue_key": "HARENO-8",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "Immediate action is required for a DOM manipulation that needs optimized queries in demo modes. Align the workflows between different systems/modules to avoid inconsistencies. Resolution at the earliest convenience is recommended.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "feature",
+                "investigation",
+                "refactoring"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:27:46.678000+05:30",
+            "summary": "Account management requires an update in search queries",
+            "updated": "2026-02-07T17:27:48.228000+05:30",
+            "assignee": "Rudra",
+            "priority": "Medium",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "HARENO-1",
+            "components": [],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "Here we have a agile workflow that has alignment issues on outdated sessions. Improve test coverage to ensure similar problems are caught early in the development cycle. It would be great to address this quickly.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "bug",
+                "documentation",
+                "refactoring"
+            ],
+            "sprint": null,
+            "status": "Done",
+            "created": "2026-02-07T17:27:12.238000+05:30",
+            "summary": "Asynchronous call has performance issues in responsive views",
+            "updated": "2026-02-07T17:27:13.582000+05:30",
+            "assignee": "Rudra",
+            "priority": "Low",
+            "reporter": "Rudra",
+            "resolved": "2026-02-07T17:27:13.561000+05:30",
+            "issue_key": "FASCUS-8",
+            "components": [
+                "Next-Gen Log Checkpoint",
+                "Optimized Platform Result",
+                "Sustainable Capability Diagram"
+            ],
+            "issue_type": "Task",
+            "time_spent": null,
+            "description": "The report sheds light on a delivery tracker that needs clearer state diagrams during file deletions. Engage in a code walkthrough with peers to uncover hidden vulnerabilities. It would be great to address this quickly.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "bug",
+                "low-priority"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:26:33.164000+05:30",
+            "summary": "Feature freeze uses too many resources on system critical paths",
+            "updated": "2026-02-07T17:26:34.324000+05:30",
+            "assignee": "Rudra",
+            "priority": "Low",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "DYNSAE-14",
+            "components": [
+                "Supportive Iteration Structure"
+            ],
+            "issue_type": "Bug",
+            "time_spent": null,
+            "description": "Our diagnostics reveal a problem with a grammar checker that needs clearer design on production servers. Document any findings during the debugging process to improve issue resolution time in the future. Resolution at the earliest convenience is recommended.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "bug"
+            ],
+            "sprint": null,
+            "status": "In Progress",
+            "created": "2026-02-07T17:25:48.211000+05:30",
+            "summary": "Barcode scanner leads to data corruption for regular user roles",
+            "updated": "2026-02-07T17:25:49.754000+05:30",
+            "assignee": "Rudra",
+            "priority": "Highest",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "CRITES-17",
+            "components": [
+                "Feature-Rich Workflow Sequence Interpretation",
+                "Remodeled Evaluation Activity"
+            ],
+            "issue_type": "Story",
+            "time_spent": null,
+            "description": "The following issue was detected with a svelte widget that causes memory leaks with high latency. Set up additional logging and monitoring for better observability during runtime. Your immediate attention to this matter is required.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [
+                "investigation",
+                "low-priority"
+            ],
+            "sprint": null,
+            "status": "To Do",
+            "created": "2026-02-07T17:23:10.840000+05:30",
+            "summary": "Email notification needs caching strategies in edge cases",
+            "updated": "2026-02-07T17:23:11.016000+05:30",
+            "assignee": "Rudra",
+            "priority": "Medium",
+            "reporter": "Rudra",
+            "resolved": null,
+            "issue_key": "CRITES-7",
+            "components": [
+                "Logical Visualization Allocation"
+            ],
+            "issue_type": "Story",
+            "time_spent": null,
+            "description": "The report sheds light on a service scale that needs pagination updates in sandbox environments. Check related logs for specific error messages or patterns that could help isolate the problem. Please prioritize its resolution as soon as possible.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        },
+        {
+            "labels": [],
+            "sprint": null,
+            "status": "Done",
+            "created": "2026-02-07T17:22:56.781000+05:30",
+            "summary": "Traffic update overuses animations during deployments",
+            "updated": "2026-02-07T17:22:58.651000+05:30",
+            "assignee": "Rudra",
+            "priority": "High",
+            "reporter": "Rudra",
+            "resolved": "2026-02-07T17:22:58.643000+05:30",
+            "issue_key": "CRITES-1",
+            "components": [
+                "Structured Grouping Structure"
+            ],
+            "issue_type": "Story",
+            "time_spent": null,
+            "description": "Here we have a server instance that fails in staging environments on mobile devices. Improve test coverage to ensure similar problems are caught early in the development cycle. Please prioritize its resolution as soon as possible.",
+            "project_key": "",
+            "story_points": null,
+            "time_estimate": null
+        }
+    ]
+}

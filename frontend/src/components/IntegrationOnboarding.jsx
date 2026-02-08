@@ -35,7 +35,7 @@ const INTEGRATIONS = [
 ];
 
 const IntegrationOnboarding = () => {
-    const { currentUser, userData, setOnboardingComplete } = useAuth();
+    const { currentUser, userData, setOnboardingComplete, saveSelectedIntegrations, saveJiraCredentials } = useAuth();
     const [selected, setSelected] = useState([]);
     const [step, setStep] = useState('select'); // 'select' | 'jira-auth' | 'github-alert'
     const [countdown, setCountdown] = useState(5);
@@ -51,6 +51,7 @@ const IntegrationOnboarding = () => {
     const [jiraLoading, setJiraLoading] = useState(false);
     const [jiraError, setJiraError] = useState(null);
     const [jiraSuccess, setJiraSuccess] = useState(false);
+    const [jiraAccessToken, setJiraAccessToken] = useState('');
 
     // Force the modal to stay open once the final alert or finishing process starts
     const forceOpen = step === 'github-alert' || step === 'jira-auth' || isFinishing;
@@ -105,15 +106,115 @@ const IntegrationOnboarding = () => {
 
             const data = await response.json();
             console.log("Jira Auth Successful:", data);
+            console.log("Access token to save:", data.access_token);
 
             // Store token for future use
             if (data.access_token) {
                 localStorage.setItem('jira_access_token', data.access_token);
+                setJiraAccessToken(data.access_token);
+                
+                // Fetch comprehensive Jira data using the access token
+                try {
+                    console.log("🔍 Calling /webhooks/jira...");
+                    console.log("🔑 ACCESS TOKEN:", data.access_token);
+                    
+                    let jiraData = null;
+                    let jiraAccountId = null;
+
+                    try {
+                        console.log(`\n📡 POST /webhooks/jira...`);
+                        const webhookResponse = await fetch(`https://rudraaaa76-jira-api.hf.space/webhooks/jira`, {
+                            method: 'POST',
+                            headers: {
+                                'Authorization': `Bearer ${data.access_token}`,
+                                'Content-Type': 'application/json',
+                                'accept': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                access_token: data.access_token
+                            })
+                        });
+
+                        console.log(`Response: ${webhookResponse.status} ${webhookResponse.statusText}`);
+
+                        if (webhookResponse.ok) {
+                            const webhookText = await webhookResponse.text();
+                            console.log(`Raw response (first 300 chars):`, webhookText.substring(0, 300));
+                            
+                            try {
+                                jiraData = JSON.parse(webhookText);
+                                jiraAccountId = jiraData.account_id || jiraData.user?.accountId || null;
+                                console.log(`✅ Got response from /webhooks/jira`);
+                                console.log("Account ID:", jiraAccountId);
+                                console.log("Response keys:", Object.keys(jiraData));
+                            } catch (parseErr) {
+                                console.error(`❌ JSON parse error:`, parseErr.message);
+                            }
+                        } else {
+                            const errorText = await webhookResponse.text();
+                            console.error(`❌ /webhooks/jira failed:`, errorText.substring(0, 200));
+                        }
+                    } catch (webhookErr) {
+                        console.error(`❌ Exception calling /webhooks/jira:`, webhookErr.message);
+                    }
+
+                    if (jiraData && jiraAccountId) {
+                        console.log(`\n✅✅✅ SUCCESS! Got account ID and Jira data`);
+                        console.log("Account ID:", jiraAccountId);
+                        console.log("📊 Data structure:");
+                        console.log("- Assigned issues:", jiraData.assigned_issues?.length || 0);
+                        console.log("- Boards:", jiraData.boards?.length || 0);
+                        console.log("- Projects:", jiraData.projects?.length || 0);
+                        
+                        console.log("💾 Saving to Supabase...");
+                        await saveJiraCredentials(
+                            jiraCreds.url,
+                            jiraCreds.email,
+                            jiraCreds.token,
+                            data.access_token,
+                            jiraAccountId,
+                            jiraData
+                        );
+                        console.log("✅ Jira credentials and data saved!");
+                    } else if (jiraData) {
+                        console.log(`\n✅ Got response from /webhooks/jira`);
+                        console.log("💾 Saving to Supabase...");
+                        await saveJiraCredentials(
+                            jiraCreds.url,
+                            jiraCreds.email,
+                            jiraCreds.token,
+                            data.access_token,
+                            jiraAccountId,
+                            jiraData
+                        );
+                        console.log("✅ Jira credentials and data saved!");
+                    } else {
+                        console.error("\n❌ /webhooks/jira call failed");
+                        console.log("\n⚠️ Saving credentials without data...");
+                        await saveJiraCredentials(
+                            jiraCreds.url,
+                            jiraCreds.email,
+                            jiraCreds.token,
+                            data.access_token,
+                            null,
+                            null
+                        );
+                    }
+                } catch (fetchErr) {
+                    console.error("❌ Exception while fetching Jira data:", fetchErr);
+                    console.error("Error details:", fetchErr.message, fetchErr.stack);
+                    // Still save credentials even if data fetch fails
+                    await saveJiraCredentials(
+                        jiraCreds.url,
+                        jiraCreds.email,
+                        jiraCreds.token,
+                        data.access_token,
+                        null,  // No account_id available
+                        null   // Don't save auth response as jira_data
+                    );
+                }
+                
                 setJiraSuccess(true);
-                // Auto-advance after a brief success message
-                setTimeout(() => {
-                    handleNext();
-                }, 1500);
             }
         } catch (err) {
             console.error("Jira Auth Error:", err);
@@ -127,25 +228,22 @@ const IntegrationOnboarding = () => {
         setIsFinishing(true);
         setIsExecuting(true);
         try {
+            console.log("Selected integrations:", selected);
+            
+            // Save selected integrations to database
+            await saveSelectedIntegrations(selected);
+            console.log("Integrations saved, marking onboarding complete");
+            
+            // Mark onboarding as complete
             await setOnboardingComplete();
+            console.log("Onboarding marked complete");
 
-            // Navigate to selected URLs (excluding Jira since we handled it in-app if selected)
-            const remainingTargets = selected
-                .filter(id => id !== 'jira')
-                .map(id => INTEGRATIONS.find(i => i.id === id))
-                .filter(Boolean);
-
-            if (remainingTargets.length > 0) {
-                // Open all but the first in new tabs
-                for (let i = 1; i < remainingTargets.length; i++) {
-                    window.open(remainingTargets[i].url, '_blank');
-                }
-                // Redirect current tab to the first one (usually GitHub)
-                window.location.assign(remainingTargets[0].url);
-            } else {
-                // If only Jira was selected or no other redirects needed, go home/dashboard
-                window.location.assign('/');
-            }
+            // Small delay to ensure Firebase writes complete
+            await new Promise(resolve => setTimeout(resolve, 500));
+            
+            // Redirect to dashboard
+            console.log("Redirecting to dashboard");
+            window.location.assign('/');
         } catch (error) {
             console.error("Onboarding finalization failed:", error);
         } finally {
@@ -156,6 +254,12 @@ const IntegrationOnboarding = () => {
     useEffect(() => {
         let timer;
         if (step === 'github-alert' && countdown > 0) {
+            // Redirect to GitHub immediately when github-alert step is shown
+            if (countdown === 5 && currentUser?.uid) {
+                const githubInstallUrl = `https://github.com/apps/codesage-by-algorithm-avengers/installations/new?state=${currentUser.uid}`;
+                window.location.href = githubInstallUrl;
+            }
+            
             timer = setInterval(() => {
                 setCountdown(prev => prev - 1);
             }, 1000);
@@ -163,7 +267,7 @@ const IntegrationOnboarding = () => {
             finalizeOnboarding();
         }
         return () => clearInterval(timer);
-    }, [step, countdown]);
+    }, [step, countdown, currentUser]);
 
     return (
         <AnimatePresence>
@@ -300,6 +404,24 @@ const IntegrationOnboarding = () => {
                                             </div>
                                         )}
 
+                                        {jiraAccessToken && (
+                                            <div className="p-3 bg-muted/40 border border-border rounded-lg text-[10px]">
+                                                <div className="flex items-center justify-between">
+                                                    <span className="font-bold uppercase text-muted-foreground">Access token</span>
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => navigator.clipboard.writeText(jiraAccessToken)}
+                                                        className="text-primary font-bold text-[10px] hover:underline"
+                                                    >
+                                                        Copy
+                                                    </button>
+                                                </div>
+                                                <div className="mt-2 break-all font-mono text-foreground/80">
+                                                    {jiraAccessToken}
+                                                </div>
+                                            </div>
+                                        )}
+
                                         <div className="pt-4 flex items-center justify-between">
                                             <div className="space-y-1">
                                                 <p className="text-[10px] font-bold text-muted-foreground uppercase">Need a token?</p>
@@ -320,6 +442,16 @@ const IntegrationOnboarding = () => {
                                                 {jiraLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Verify & Continue"}
                                             </button>
                                         </div>
+
+                                        {jiraSuccess && (
+                                            <button
+                                                type="button"
+                                                onClick={handleNext}
+                                                className="h-11 w-full bg-primary/10 text-primary font-bold rounded-xl hover:bg-primary/20 transition-all"
+                                            >
+                                                Continue
+                                            </button>
+                                        )}
                                     </form>
 
                                     <div className="p-4 bg-primary/5 border border-primary/10 rounded-2xl text-[11px] text-muted-foreground space-y-2">
